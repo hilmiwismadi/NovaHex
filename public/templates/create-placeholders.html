@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        canvas { display: block; margin: 10px; border: 1px solid #ccc; }
+    </style>
+</head>
+<body>
+    <h2>Navbar Placeholders</h2>
+    <canvas id="navbar1" width="400" height="80"></canvas>
+    <canvas id="navbar2" width="400" height="80"></canvas>
+    <canvas id="navbar3" width="400" height="80"></canvas>
+    <canvas id="navbar4" width="400" height="80"></canvas>
+    
+    <h2>Footer Placeholders</h2>
+    <canvas id="footer1" width="400" height="120"></canvas>
+    <canvas id="footer2" width="400" height="120"></canvas>
+    <canvas id="footer3" width="400" height="120"></canvas>
+
+    <script>
+        const navbarColors = ['#1AB0C8', '#2EC1D9', '#179FB5', '#76BDE4'];
+        const footerColors = ['#001118', '#4E5F66', '#75868D'];
+        
+        // Create navbar placeholders
+        navbarColors.forEach((color, i) => {
+            const canvas = document.getElementById('navbar' + (i+1));
+            const ctx = canvas.getContext('2d');
+            
+            // Background
+            ctx.fillStyle = color;
+            ctx.fillRect(0, 0, 400, 80);
+            
+            // Text
+            ctx.fillStyle = '#FFFFFF';
+            ctx.font = 'bold 24px Arial';
+            ctx.textAlign = 'center';
+            ctx.fillText('Navbar Option ' + String.fromCharCode(65+i), 200, 50);
+        });
+        
+        // Create footer placeholders
+        footerColors.forEach((color, i) => {
+            const canvas = document.getElementById('footer' + (i+1));
+            const ctx = canvas.getContext('2d');
+            
+            // Background
+            ctx.fillStyle = color;
+            ctx.fillRect(0, 0, 400, 120);
+            
+            // Text
+            ctx.fillStyle = '#FFFFFF';
+            ctx.font = 'bold 24px Arial';
+            ctx.textAlign = 'center';
+            ctx.fillText('Footer Option ' + String.fromCharCode(65+i), 200, 70);
+        });
+        
+        console.log('Placeholders created. Right-click each canvas to save as image.');
+    </script>
+</body>
+</html>

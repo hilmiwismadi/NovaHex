@@ -1,26 +1,122 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #F8FAFC;
+  --foreground: #001118;
 }
 
 @theme inline {
+  /* ArachnoVa Color Palette */
+  --color-neutral-a: #FAFDFF;
+  --color-neutral-b: #C3D4DB;
+  --color-neutral-c: #9CADB4;
+  --color-neutral-d: #75868D;
+  --color-neutral-e: #4E5F66;
+  --color-neutral-f: #27383F;
+  --color-neutral-g: #001118;
+
+  --color-lightblue-a: #84D4E1;
+  --color-lightblue-b: #2EC1D9;
+  --color-lightblue-c: #1AB0C8;
+  --color-lightblue-d: #179FB5;
+  --color-lightblue-e: #158B9E;
+
+  --color-white-mainpage: #F8FAFC;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Template Library Fonts */
+@font-face {
+  font-family: 'Britanic';
+  src: url('/fonts/Britannic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BebasNeue';
+  src: url('/fonts/BebasNeue-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/Poppins-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('/fonts/Roboto-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+/* Scrollbar utilities */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-blue {
+  scrollbar-width: thin;
+  scrollbar-color: blue transparent;
+}
+
+.scrollbar-blue::-webkit-scrollbar {
+  width: 10px;
+}
+
+.scrollbar-blue::-webkit-scrollbar-thumb {
+  background-color: blue;
+  border-radius: 5px;
+}
+
+.scrollbar-blue::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.scrollbar-blue::-webkit-scrollbar-button {
+  display: none;
+}
+
+/* Gradient text utility */
+.gradient-text {
+  font-size: 2rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #2629D3 0%, #2193BC 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+/* Font utilities */
+.font-Britanic {
+  font-family: 'Britanic', sans-serif;
+}
+
+.font-Poppins {
+  font-family: 'Poppins', sans-serif;
+}
+
+.font-Bebasneue {
+  font-family: 'BebasNeue', sans-serif;
+}
+
+.font-Roboto {
+  font-family: 'Roboto', sans-serif;
 }
