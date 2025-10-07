@@ -17,7 +17,7 @@ interface CardProps {
 function Pricing3Card({ feature }: CardProps) {
     return (
         <div className="md:w-[21.8125vw] w-[80.465vw] bg-white rounded-lg shadow-md md:p-8 p-[4vw] md:my-0 my-[2vw]">
-            <h2 className="md:text-[0.9375vw] text-[3.467vw] font-bold text-[#6236FF] md:mb-2 mb-[2vw]">{feature.title}</h2>
+            <h2 className="md:text-[0.9375vw] text-[3.467vw] font-bold text-[var(--color-primary)] md:mb-2 mb-[2vw]">{feature.title}</h2>
             <div className="text-[#2B2F48]">
                 <div className="flex items-baseline space-x-1">
                     {feature.price !== "Free" && <span className="md:text-[0.875vw] text-[4.667vw]">Rp</span>}
@@ -38,7 +38,7 @@ function Pricing3Card({ feature }: CardProps) {
                     </li>
                 ))}
             </ul>
-            <button className="flex items-center justify-center w-full py-3 bg-[#F3F7FE] text-[#246BFD] font-medium rounded-lg hover:bg-[#E0ECFD] transition duration-300 ease-in-out md:text-[0.885vw] text-[3.274vw]">
+            <button className="flex items-center justify-center w-full py-3 bg-[#F3F7FE] text-[var(--color-primary)] font-medium rounded-lg hover:bg-[#E0ECFD] transition duration-300 ease-in-out md:text-[0.885vw] text-[3.274vw]">
                 Start Free Trial
                 <FiArrowRight className="ml-2" />
             </button>

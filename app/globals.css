@@ -3,6 +3,22 @@
 :root {
   --background: #F8FAFC;
   --foreground: #001118;
+
+  /* Customizable Color System - Default ArachnoVa Theme */
+  --color-primary: #1AB0C8;
+  --color-secondary: #4273CE;
+  --color-tertiary: #F65050;
+}
+
+/* Swiper Pagination Customization */
+.swiper-pagination-bullet {
+  background-color: var(--color-primary) !important;
+  opacity: 0.5 !important;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1 !important;
+  background-color: var(--color-primary) !important;
 }
 
 @theme inline {

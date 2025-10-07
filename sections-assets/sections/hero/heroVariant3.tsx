@@ -32,7 +32,7 @@ export default function Hero3() {
             <p className="text-2xl sm:text-3xl lg:text-[3.125vw] font-bebasneue text-center">for Coffee & Conversation</p>
             <p className="text-sm sm:text-base lg:text-[0.989vw] w-full sm:w-[80%] lg:w-[46.56vw] text-center px-4 sm:px-0">Nullam odio lacus, dictum quis pretium congue, vehicula venenatis nunc. In hac habitasse platea dictumst. Phasellus vel velit vel augue maximus pharetra.</p>
           </div>
-          <button className="bg-orange-brown py-3 sm:py-4 px-6 sm:px-8 rounded-full text-sm sm:text-base lg:text-[0.833vw] w-full sm:w-auto hover:bg-opacity-90 hover:scale-105 hover:shadow-lg transition-all duration-300">SEE OUR BEVERAGES</button>
+          <button className="bg-[var(--color-primary)] py-3 sm:py-4 px-6 sm:px-8 rounded-full text-sm sm:text-base lg:text-[0.833vw] w-full sm:w-auto hover:bg-[var(--color-secondary)] hover:scale-105 hover:shadow-lg transition-all duration-300">SEE OUR BEVERAGES</button>
           <div className="flex md:flex-row flex-col md:items-center md:justify-center gap-x-4 sm:gap-x-6 lg:gap-x-[2.083vw] gap-y-6 sm:gap-y-8 lg:gap-y-0">
             <div className="w-full sm:w-[80%] lg:w-[15.625vw] lg:h-[7.916vw] text-right space-y-3 sm:space-y-4 lg:space-y-[2vw] bg-black/30 border-r-2 border-r-orange-brown rounded-md p-3 sm:p-4 lg:p-[0.625vw] hover:bg-black/40 transition-all duration-300">
               <p className="text-base sm:text-lg lg:text-[1vw] font-poppins">Our Location</p>

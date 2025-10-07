@@ -4,11 +4,11 @@ export default function AboutUs2() {
   return (
     <section className="w-full md:min-h-[31.563vw] md:aspect-ratio[1920/1080] aspect-ratio[430/742] p-4 sm:p-6 lg:p-8 flex flex-col justify-center items-center bg-white text-gray-800 relative">
       <div className="w-full sm:w-[90%] lg:w-[65.729vw] lg:h-[19.583vw] flex flex-col md:flex-row md:justify-center justify-between items-start gap-4 sm:gap-6">
-        <h1 className="font-bold text-3xl sm:text-4xl lg:text-[1.875vw] text-[#C77B2C] md:hidden flex">
+        <h1 className="font-bold text-3xl sm:text-4xl lg:text-[1.875vw] text-[var(--color-tertiary)] md:hidden flex">
           About us
         </h1>
         <div className="w-full lg:w-[23.385vw] lg:h-[16.042vw] order-2 md:order-1">
-          <h1 className="font-bold text-2xl sm:text-3xl lg:text-[1.875vw] text-[#C77B2C] hidden md:flex">
+          <h1 className="font-bold text-2xl sm:text-3xl lg:text-[1.875vw] text-[var(--color-tertiary)] hidden md:flex">
             About us
           </h1>
           <p className="w-full text-sm sm:text-base lg:text-[1.042vw] text-justify">

@@ -30,7 +30,7 @@ const sources = [
 export default function service2() {
   return (
     <section className="w-full md:min-h-[40.99vw] md:aspect-ratio[1920/1080] aspect-ratio[430/1227] p-8 flex flex-col justify-center items-center bg-white text-gray-800 relative">
-      <h1 className="text-[11.358vw] md:text-[2.083vw] font-bold text-[#CE4244]">
+      <h1 className="text-[11.358vw] md:text-[2.083vw] font-bold text-[var(--color-tertiary)]">
         Our Services
       </h1>
       <div className="md:w-[92.188vw] md:h-[22.865vw] w-[84.707vw] h-[214.616vw] flex flex-col md:flex-row items-center justify-between mt-[2vw]">
@@ -49,7 +49,7 @@ export default function service2() {
               />
             </div>
             <div className="flex flex-col items-start">
-              <p className="font-bold text-[3.644vw] md:text-[1.25vw] mt-[1vw] group-hover:text-[#CE4244] transition-colors duration-300">
+              <p className="font-bold text-[3.644vw] md:text-[1.25vw] mt-[1vw] group-hover:text-[var(--color-tertiary)] transition-colors duration-300">
                 {client.title}
               </p>
               <p className="text-[2.733vw] md:text-[0.938vw] mt-[0.2vw] md:leading-[2vw]">

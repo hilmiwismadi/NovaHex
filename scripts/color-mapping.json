@@ -1,0 +1,76 @@
+{
+  "colorMappings": {
+    "primary": [
+      "#1AB0C8",
+      "#5AB0BB",
+      "#246BFD",
+      "#407BFF",
+      "#6236FF"
+    ],
+    "secondary": [
+      "#4273CE",
+      "#407BFF"
+    ],
+    "tertiary": [
+      "#F65050",
+      "#CB2323",
+      "#CE4244",
+      "#C77B2C"
+    ],
+    "neutral": [
+      "#161C2D",
+      "#2B2F48",
+      "#101010",
+      "#2C2C2C",
+      "#565656",
+      "#5E5E5E",
+      "#6C6C6C",
+      "#667085",
+      "#898989"
+    ],
+    "background": [
+      "#F9F9F9",
+      "#F9FAFB",
+      "#F3F7FE",
+      "#EEF3FF",
+      "#E0ECFD",
+      "#E5C4B9",
+      "#593D29",
+      "#593D35"
+    ],
+    "border": [
+      "#C9D9FF",
+      "#D4D4D4"
+    ]
+  },
+  "replacements": {
+    "bg-[#1AB0C8]": "bg-[var(--color-primary)]",
+    "bg-[#5AB0BB]": "bg-[var(--color-primary)]",
+    "bg-[#246BFD]": "bg-[var(--color-primary)]",
+    "bg-[#407BFF]": "bg-[var(--color-secondary)]",
+    "bg-[#4273CE]": "bg-[var(--color-secondary)]",
+    "bg-[#F65050]": "bg-[var(--color-tertiary)]",
+    "bg-[#CB2323]": "bg-[var(--color-tertiary)]",
+    "bg-[#CE4244]": "bg-[var(--color-tertiary)]",
+    "bg-[#C77B2C]": "bg-[var(--color-tertiary)]",
+
+    "text-[#1AB0C8]": "text-[var(--color-primary)]",
+    "text-[#246BFD]": "text-[var(--color-primary)]",
+    "text-[#6236FF]": "text-[var(--color-primary)]",
+    "text-[#407BFF]": "text-[var(--color-secondary)]",
+    "text-[#4273CE]": "text-[var(--color-secondary)]",
+    "text-[#F65050]": "text-[var(--color-tertiary)]",
+    "text-[#CB2323]": "text-[var(--color-tertiary)]",
+    "text-[#CE4244]": "text-[var(--color-tertiary)]",
+    "text-[#C77B2C]": "text-[var(--color-tertiary)]",
+
+    "border-[#4273CE]": "border-[var(--color-secondary)]",
+    "border-[#CB2323]": "border-[var(--color-tertiary)]",
+
+    "hover:bg-[#5AB0BB]": "hover:bg-[var(--color-primary)]",
+    "hover:bg-[#407BFF]": "hover:bg-[var(--color-secondary)]",
+    "hover:text-[#1AB0C8]": "hover:text-[var(--color-primary)]",
+    "hover:text-[#246BFD]": "hover:text-[var(--color-primary)]",
+    "hover:border-[#4273CE]": "hover:border-[var(--color-secondary)]"
+  }
+}

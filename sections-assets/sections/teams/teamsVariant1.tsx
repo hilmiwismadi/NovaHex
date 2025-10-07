@@ -68,7 +68,7 @@ export default function teams1() {
               <p className="font-bold text-[4.186vw] md:text-[0.938vw] mt-[3vw] md:mt-[0.5vw]">
                 {client.title}
               </p>
-              <p className="text-[#407BFF] text-[3.721vw] md:text-[0.833vw] text-center mt-[0.5vw]">
+              <p className="text-[var(--color-secondary)] text-[3.721vw] md:text-[0.833vw] text-center mt-[0.5vw]">
                 {client.text1}
               </p>
               <p className="text-[3.721vw] md:text-[0.833vw] text-[#667085] text-center mt-[0.5vw]">

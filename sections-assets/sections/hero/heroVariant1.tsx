@@ -29,7 +29,7 @@ export default function Hero1() {
             </h1>
             <a
               href=""
-              className="bg-[#4273CE] text-white font-semibold w-32 sm:w-36 lg:w-[6.667vw] h-10 sm:h-12 lg:h-[2.24vw] rounded-lg lg:rounded-[0.521vw] text-sm sm:text-base lg:text-[0.938vw] my-3 sm:my-4 lg:my-[1vw] text-center flex items-center justify-center hover:bg-[#5AB0BB] hover:scale-105 hover:shadow-lg transition-all duration-300"
+              className="bg-[var(--color-secondary)] text-white font-semibold w-32 sm:w-36 lg:w-[6.667vw] h-10 sm:h-12 lg:h-[2.24vw] rounded-lg lg:rounded-[0.521vw] text-sm sm:text-base lg:text-[0.938vw] my-3 sm:my-4 lg:my-[1vw] text-center flex items-center justify-center hover:bg-[var(--color-primary)] hover:scale-105 hover:shadow-lg transition-all duration-300"
             >
               Book Now
             </a>

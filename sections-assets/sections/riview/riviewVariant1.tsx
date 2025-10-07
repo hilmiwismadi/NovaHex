@@ -55,7 +55,7 @@ const data: iCard[] = [
 
 function Card({ desc, image_src, name, occupation }: iCard) {
   return (
-    <div className="w-[73.86vw] md:w-[21.4583vw] md:h-[16.229vw] h-[64.186vw] font-roboto md:text-[0.9375vw] text-[3.521vw] shadow-[0px_10px_15px_-3px_rgba(0,0,0,0.1)] md:p-[1.666vw] p-[5vw] bg-white rounded-md flex flex-col justify-between">
+    <div className="w-[73.86vw] md:w-[21.4583vw] md:h-[16.229vw] h-[64.186vw] font-roboto md:text-[0.9375vw] text-[3.521vw] shadow-[0px_10px_15px_-3px_rgba(0,0,0,0.1)] md:p-[1.666vw] p-[5vw] bg-white rounded-md flex flex-col justify-between border-2 border-[var(--color-primary)] border-opacity-20">
       <p className="mb-[1vw]">{desc}</p>
       <div className="flex gap-x-[0.5vw] items-center">
         <Image
@@ -99,16 +99,16 @@ export default function Riview1() {
           Apa Kata Pelanggan?
         </h1>
         <div className="md:flex hidden gap-x-[1vw]">
-          <button onClick={handlePrev}>
+          <button onClick={handlePrev} className="hover:scale-110 transition-transform duration-300">
             <MdOutlineArrowCircleLeft
               size={"2.5vw"}
-              className="text-[rgba(64,123,255,1)]"
+              className="text-[var(--color-primary)] hover:text-[var(--color-secondary)] transition-colors duration-300"
             />
           </button>
-          <button onClick={handleNext}>
+          <button onClick={handleNext} className="hover:scale-110 transition-transform duration-300">
             <MdOutlineArrowCircleRight
               size={"2.5vw"}
-              className="text-[rgba(64,123,255,1)]"
+              className="text-[var(--color-primary)] hover:text-[var(--color-secondary)] transition-colors duration-300"
             />
           </button>
         </div>

@@ -24,9 +24,9 @@ const sources = [
 export default function location1() {
   return (
     <section className="w-full h-[180.465vw] md:h-[30.99vw] md:aspect-[1920/1080] aspect-[430/776] md:p-8 flex flex-col justify-center items-center bg-white text-gray-800 relative">
-      <div className="w-full h-full md:w-[53.906vw] md:h-[24.74vw] flex md:flex-row flex-col items-center justify-center bg-[#EEF3FF] rounded-[2.03vw] border-[#C9D9FF] border-[0.078vw]">
+      <div className="w-full h-full md:w-[53.906vw] md:h-[24.74vw] flex md:flex-row flex-col items-center justify-center bg-[var(--color-tertiary)] rounded-[2.03vw] border-[var(--color-primary)] border-opacity-30 border-[0.078vw]">
         <div className="w-[84vw] h-[76.512vw] md:w-[21.25vw] md:h-[18.646vw] md:order-1 order-2 flex flex-col justify-between md:mt-0 mt-[6vw]">
-          <h1 className="text-[#407BFF] font-bold text-[6.279vw] md:text-[1.563vw]">
+          <h1 className="text-[var(--color-secondary)] font-bold text-[6.279vw] md:text-[1.563vw]">
             Contact Us
           </h1>
           <p className="text-[3.372vw] md:text-[0.833vw]">

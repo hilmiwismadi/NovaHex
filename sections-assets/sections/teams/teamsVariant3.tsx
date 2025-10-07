@@ -40,7 +40,7 @@ export default function teams3() {
   return (
     <section className="w-full md:min-h-[57.708vw] md:aspect-ratio[1920/1080] aspect-ratio[430/2998] p-8 flex flex-col justify-center items-center bg-white text-gray-800 relative">
       <div className="md:w-[40vw] md:h-[8.333vw] w-[86.279vw] h-[51.163vw] flex flex-col items-center justify-between md:justify-center">
-        <p className="text-[#407BFF] text-[3.721vw] md:text-[0.833vw]">
+        <p className="text-[var(--color-secondary)] text-[3.721vw] md:text-[0.833vw]">
           We're hiring!
         </p>
         <h1 className="font-bold text-[8.372vw] md:text-[1.875vw]">
@@ -70,7 +70,7 @@ export default function teams3() {
               <p className="font-bold text-[4.186vw] md:text-[0.938vw] mt-[3vw] md:mt-[0.5vw]">
                 {client.title}
               </p>
-              <p className="text-[#407BFF] text-[3.721vw] md:text-[0.833vw] text-center mt-[0.5vw]">
+              <p className="text-[var(--color-secondary)] text-[3.721vw] md:text-[0.833vw] text-center mt-[0.5vw]">
                 {client.text1}
               </p>
               <p className="text-[3.721vw] md:text-[0.833vw] text-[#667085] text-center mt-[2.5vw] md:mt-[0.5vw]">
@@ -113,7 +113,7 @@ export default function teams3() {
               <p className="font-bold text-[4.186vw] md:text-[0.938vw] mt-[3vw] md:mt-[0.5vw]">
                 {client.title}
               </p>
-              <p className="text-[#407BFF] text-[3.721vw] md:text-[0.833vw] text-center mt-[0.5vw]">
+              <p className="text-[var(--color-secondary)] text-[3.721vw] md:text-[0.833vw] text-center mt-[0.5vw]">
                 {client.text1}
               </p>
               <p className="text-[3.721vw] md:text-[0.833vw] text-[#667085] text-center mt-[2.5vw] md:mt-[0.5vw]">

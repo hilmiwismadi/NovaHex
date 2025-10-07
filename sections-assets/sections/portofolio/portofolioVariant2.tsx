@@ -135,7 +135,7 @@ export default function portofolio2() {
       </div>
       <a
         href="#"
-        className="md:w-[12.76vw] md:h-[2.5vw] w-[56.977vw] h-[11.163vw] flex items-center justify-center mt-[10vw] md:absolute md:bottom-[1vw] border-[#CB2323] border-[0.233vw] md:border-[0.052vw] text-[3.721vw] md:text-[0.833vw] font-bold text-[#CB2323] hover:bg-slate-50 hover:scale-105 hover:shadow-lg transition-all duration-300"
+        className="md:w-[12.76vw] md:h-[2.5vw] w-[56.977vw] h-[11.163vw] flex items-center justify-center mt-[10vw] md:absolute md:bottom-[1vw] border-[var(--color-tertiary)] border-[0.233vw] md:border-[0.052vw] text-[3.721vw] md:text-[0.833vw] font-bold text-[var(--color-tertiary)] hover:bg-slate-50 hover:scale-105 hover:shadow-lg transition-all duration-300"
       >
         Show More
       </a>

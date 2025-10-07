@@ -1,14 +1,12 @@
 "use client";
 
-import { useRouter } from "next/navigation";
 import { useBuilder } from "../context/BuilderContext";
 import { IoRocketSharp } from "react-icons/io5";
 
 export default function CreateWebButton() {
-  const router = useRouter();
-  const { selectedSections } = useBuilder();
+  const { selectedSections, setCurrentStep } = useBuilder();
 
-  const handleCreateWeb = () => {
+  const handleNextStep = () => {
     // Check if footer is selected
     const hasFooter = selectedSections.some(
       (s) => s.variantId && s.variantId.startsWith("footer-")
@@ -22,19 +20,13 @@ export default function CreateWebButton() {
       }
 
       // Show alert
-      alert("⚠️ Please select a Footer section before creating your website!");
+      alert("⚠️ Please select a Footer section before proceeding!");
       return;
     }
 
-    // Build query string with selected sections
-    const variantIds = selectedSections
-      .filter((s) => s.variantId)
-      .map((s) => s.variantId)
-      .join(",");
-
-    if (variantIds) {
-      router.push(`/build?sections=${variantIds}`);
-    }
+    // Move to color selection step
+    setCurrentStep(2);
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   // Only show button if there are selected sections
@@ -55,14 +47,14 @@ export default function CreateWebButton() {
         </div>
       )}
 
-      {/* Create Web Button */}
+      {/* Next Step Button */}
       <button
-        onClick={handleCreateWeb}
+        onClick={handleNextStep}
         disabled={validSelections === 0}
         className="group relative bg-gradient-to-br from-[#2EC1D9] to-[#179FB5] text-white font-bold px-4 py-3 sm:px-8 sm:py-4 rounded-full shadow-2xl hover:shadow-[#1AB0C8]/50 hover:scale-110 transition-all duration-300 flex items-center gap-2 sm:gap-3 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
       >
         <IoRocketSharp size={20} className="sm:w-6 sm:h-6 group-hover:animate-pulse" />
-        <span className="text-sm sm:text-lg">Create Your Web</span>
+        <span className="text-sm sm:text-lg">Next: Choose Colors</span>
 
         {/* Glow Effect */}
         <div className="absolute inset-0 rounded-full bg-gradient-to-br from-[#2EC1D9] to-[#179FB5] opacity-0 group-hover:opacity-50 blur-xl transition-opacity duration-300"></div>

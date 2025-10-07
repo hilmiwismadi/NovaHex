@@ -1,24 +1,18 @@
-import Image from "next/image";
+import { FaLock, FaCog, FaPuzzlePiece, FaSearch, FaLifeRing, FaDollarSign } from "react-icons/fa";
 
 const sources1 = [
   {
-    src: "/image/kelebihan/padlock.png",
-    width: "md:w-[4.583vw] w-[14.24vw]",
-    height: "md:h-[4.583vw] h-[14.24vw]",
+    icon: <FaLock className="text-[var(--color-primary)] md:text-[4.583vw] text-[14.24vw]" />,
     title: "Enhanced Security",
     text: "Lorem ipsum dolor sit amet consectetur. Scelerisque pellentesque elementum fringilla eros condimentum faucibus scelerisque senectus. Imperdiet nulla egestas",
   },
   {
-    src: "/image/kelebihan/gear.png",
-    width: "md:w-[4.583vw] w-[14.24vw]",
-    height: "md:h-[4.583vw] h-[14.24vw]",
+    icon: <FaCog className="text-[var(--color-primary)] md:text-[4.583vw] text-[14.24vw]" />,
     title: "Increased Efficiency",
     text: "Lorem ipsum dolor sit amet consectetur. Scelerisque pellentesque elementum fringilla eros condimentum faucibus scelerisque senectus. Imperdiet nulla egestas",
   },
   {
-    src: "/image/kelebihan/puzzle.png",
-    width: "md:w-[4.583vw] w-[14.24vw]",
-    height: "md:h-[4.583vw] h-[14.24vw]",
+    icon: <FaPuzzlePiece className="text-[var(--color-primary)] md:text-[4.583vw] text-[14.24vw]" />,
     title: "Improved Collaboration",
     text: "Lorem ipsum dolor sit amet consectetur. Scelerisque pellentesque elementum fringilla eros condimentum faucibus scelerisque senectus. Imperdiet nulla egestas",
   },
@@ -26,23 +20,17 @@ const sources1 = [
 
 const sources2 = [
   {
-    src: "/image/kelebihan/magnifyingGlass.png",
-    width: "md:w-[3.906vw] w-[12.135vw]",
-    height: "md:h-[3.906vw] h-[12.135vw]",
+    icon: <FaSearch className="text-[var(--color-primary)] md:text-[3.906vw] text-[12.135vw]" />,
     title: " Data-Driven Insights",
     text: "Lorem ipsum dolor sit amet consectetur. Scelerisque pellentesque elementum fringilla eros condimentum faucibus scelerisque senectus. Imperdiet nulla egestas",
   },
   {
-    src: "/image/kelebihan/lifePreserver.png",
-    width: "md:w-[3.906vw] w-[12.135vw]",
-    height: "md:h-[3.906vw] h-[12.135vw]",
+    icon: <FaLifeRing className="text-[var(--color-primary)] md:text-[3.906vw] text-[12.135vw]" />,
     title: "24/7 Customer Support",
     text: "Lorem ipsum dolor sit amet consectetur. Scelerisque pellentesque elementum fringilla eros condimentum faucibus scelerisque senectus. Imperdiet nulla egestas",
   },
   {
-    src: "/image/kelebihan/handMoney.png",
-    width: "md:w-[3.906vw] w-[12.135vw]",
-    height: "md:h-[3.906vw] h-[12.135vw]",
+    icon: <FaDollarSign className="text-[var(--color-primary)] md:text-[3.906vw] text-[12.135vw]" />,
     title: "Best Price",
     text: "Lorem ipsum dolor sit amet consectetur. Scelerisque pellentesque elementum fringilla eros condimentum faucibus scelerisque senectus. Imperdiet nulla egestas",
   },
@@ -53,7 +41,7 @@ export default function kelebihan1() {
     <section className="w-full md:min-h-[42.344vw] md:aspect-ratio[1920/1080] aspect-ratio[430/1628] p-8 flex flex-col justify-center items-center bg-white text-gray-800 relative">
       <div className="md:w-[87.5vw] md:h-[34.01vw] w-full h-[326.512vw] flex flex-col items-center justify-between">
         <div className="md:w-[52.135vw] md:h-[5.938vw] w-[79.07vw] h-[78.372vw] text-center">
-          <h1 className="font-bold text-[13.53vw] md:text-[2.083vw] text-[#4273CE]">
+          <h1 className="font-bold text-[13.53vw] md:text-[2.083vw] text-[var(--color-secondary)]">
             Solution for Your Business
           </h1>
           <p className="text-[3.488vw] md:text-[1.25vw] text-[#5E5E5E] text-center">
@@ -69,14 +57,10 @@ export default function kelebihan1() {
                 className="md:w-[29.167vw] w-full flex flex-col items-center justify-center md:mt-0 mt-[2vw] group"
                 key={index}
               >
-                <Image
-                  src={client.src}
-                  alt="Ornament Background"
-                  width={10000}
-                  height={10000}
-                  className={`${client.width} ${client.height} object-cover hover:scale-110 transition-transform duration-300`}
-                />
-                <h1 className="text-black text-[3.884vw] md:text-[1.25vw] font-bold mt-[0.5vw] group-hover:text-[#4273CE] transition-colors duration-300">
+                <div className="hover:scale-110 transition-transform duration-300">
+                  {client.icon}
+                </div>
+                <h1 className="text-black text-[3.884vw] md:text-[1.25vw] font-bold mt-[0.5vw] group-hover:text-[var(--color-secondary)] transition-colors duration-300">
                   {client.title}
                 </h1>
                 <p className="text-[2.912vw] md:text-[0.938vw] text-[#5E5E5E] text-justify px-[1.3vw] mt-[1vw]">
@@ -91,14 +75,10 @@ export default function kelebihan1() {
                 className="md:w-[29.167vw] w-full flex flex-col items-center justify-center md:mt-0 mt-[2vw] group"
                 key={index}
               >
-                <Image
-                  src={client.src}
-                  alt="Ornament Background"
-                  width={10000}
-                  height={10000}
-                  className={`${client.width} ${client.height} object-cover hover:scale-110 transition-transform duration-300`}
-                />
-                <h1 className="text-black text-[3.884vw] md:text-[1.25vw] font-bold mt-[0.5vw] group-hover:text-[#4273CE] transition-colors duration-300">
+                <div className="hover:scale-110 transition-transform duration-300">
+                  {client.icon}
+                </div>
+                <h1 className="text-black text-[3.884vw] md:text-[1.25vw] font-bold mt-[0.5vw] group-hover:text-[var(--color-secondary)] transition-colors duration-300">
                   {client.title}
                 </h1>
                 <p className="text-[2.912vw] md:text-[0.938vw] text-[#5E5E5E] text-justify px-[1.3vw] mt-[1vw]">

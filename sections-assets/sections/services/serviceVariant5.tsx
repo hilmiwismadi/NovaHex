@@ -24,7 +24,7 @@ interface cardProps {
 
 function CardService({ image_path, type, title, description }: cardProps) {
   return (
-    <div className="md:w-[22.104vw] w-[68.837vw] md:h-[31.688vw] h-[87.209vw] md:p-[0.5vw]  font-roboto shadow-lg rounded-xl m-[1vw] hover:shadow-xl transition-shadow duration-300 group">
+    <div className="md:w-[22.104vw] w-[68.837vw] md:h-[31.688vw] h-[87.209vw] md:p-[0.5vw]  font-roboto shadow-lg rounded-xl m-[1vw] border-2 border-[var(--color-primary)] border-opacity-20 hover:shadow-xl transition-shadow duration-300 group">
       <div className="overflow-hidden md:rounded-none rounded-lg">
         <Image alt="service image" src={image_path} width={10000} height={10000} className="md:w-[20.104vw] w-[68.837vw] md:h-[11.458vw] h-[35.581vw] mb-[1vw] md:p-0 p-[1vw] hover:scale-105 transition-transform duration-300" />
       </div>
@@ -32,7 +32,7 @@ function CardService({ image_path, type, title, description }: cardProps) {
       <h1 className="font-bold md:text-[1.25vw] text-[3.888vw] md:mb-[0.5vw] mb-[3vw] md:p-0 px-[5vw]">{title}</h1>
       <p className="md:text-[0.938vw] text-[2.916vw] md:mb-[2vw] mb-[3vw] md:p-0 px-[5vw]">{description}</p>
       <div className="md:px-0 px-[5vw]">
-        <button className="w-full flex items-center gap-x-[0.8vw] p-[1vw] md:text-[0.833vw] text-[2.593vw] font-bold text-white bg-blue-500 rounded-md justify-center hover:scale-105 hover:shadow-lg transition-all duration-300">
+        <button className="w-full flex items-center gap-x-[0.8vw] p-[1vw] md:text-[0.833vw] text-[2.593vw] font-bold text-white bg-[var(--color-primary)] rounded-md justify-center hover:bg-[var(--color-secondary)] hover:scale-105 hover:shadow-lg transition-all duration-300">
           <p>Button Text</p>
           <FaArrowRight className="group-hover:translate-x-1 transition-transform duration-300" />
         </button>

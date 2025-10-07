@@ -1,31 +1,23 @@
-import Image from "next/image";
+import { FaTrophy, FaShieldAlt, FaShippingFast, FaHeadset } from "react-icons/fa";
 
 const sources = [
   {
-    src: "/image/kelebihan/trophy.png",
-    width: "md:w-[3.125vw] w-[13.953vw]",
-    height: "md:h-[3.125vw] h-[13.953vw]",
+    icon: <FaTrophy className="text-[var(--color-primary)] md:text-[3.125vw] text-[13.953vw]" />,
     title: "High Quality",
     text: "crafted from top materials",
   },
   {
-    src: "/image/kelebihan/guarantee.png",
-    width: "md:w-[3.125vw] w-[13.953vw]",
-    height: "md:h-[3.125vw] h-[13.953vw]",
+    icon: <FaShieldAlt className="text-[var(--color-primary)] md:text-[3.125vw] text-[13.953vw]" />,
     title: "Warranty Protection",
     text: "Over 2 years",
   },
   {
-    src: "/image/kelebihan/shipping.png",
-    width: "md:w-[3.125vw] w-[13.953vw]",
-    height: "md:h-[3.125vw] h-[13.953vw]",
+    icon: <FaShippingFast className="text-[var(--color-primary)] md:text-[3.125vw] text-[13.953vw]" />,
     title: "Free Shipping",
     text: "Order over $150",
   },
   {
-    src: "/image/kelebihan/customerSupport.png",
-    width: "md:w-[3.125vw] w-[13.953vw]",
-    height: "md:h-[3.125vw] h-[13.953vw]",
+    icon: <FaHeadset className="text-[var(--color-primary)] md:text-[3.125vw] text-[13.953vw]" />,
     title: "24 / 7 Support",
     text: "Dedicated support",
   },
@@ -40,15 +32,11 @@ export default function kelebihan3() {
             className="md:w-[17.552vw] md:h-[3.646vw] w-full h-[16.279vw] flex flex-row items-center justify-start md:justify-center group"
             key={index}
           >
-            <Image
-              src={client.src}
-              alt="Ornament Background"
-              width={10000}
-              height={10000}
-              className={`${client.width} ${client.height} mr-[2.5vw] md:mr-[1vw] object-cover hover:scale-110 transition-transform duration-300`}
-            />
+            <div className="mr-[2.5vw] md:mr-[1vw] hover:scale-110 transition-transform duration-300">
+              {client.icon}
+            </div>
             <div className="">
-              <h1 className="text-[5.814vw] md:text-[1.094vw] font-bold group-hover:text-[#1AB0C8] transition-colors duration-300">
+              <h1 className="text-[5.814vw] md:text-[1.094vw] font-bold group-hover:text-[var(--color-primary)] transition-colors duration-300">
                 {client.title}
               </h1>
               <p className="text-[5vw] md:text-[0.885vw] text-[#898989]">

@@ -25,7 +25,7 @@ export default function location1() {
   return (
     <section className="w-full h-[195.581vw] md:h-[34.583vw] md:aspect-[1920/1080] aspect-[430/841] p-8 flex flex-col justify-center items-center bg-white text-gray-800 relative">
       <div className="relative w-full h-full md:w-[47.604vw] md:h-[28.333vw] flex flex-col md:flex-row items-center justify-start">
-        <div className="w-full h-[95vw] md:w-[25.573vw] md:h-[28.333vw] bg-[#407BFF] rounded-[2.047vw] md:rounded-[0.521vw] p-[5vw] md:p-[2vw] z-0 order-2 absolute bottom-0 md:block">
+        <div className="w-full h-[95vw] md:w-[25.573vw] md:h-[28.333vw] bg-[var(--color-secondary)] rounded-[2.047vw] md:rounded-[0.521vw] p-[5vw] md:p-[2vw] z-0 order-2 absolute bottom-0 md:block">
           {" "}
           {/** 1st */}
           <h1 className="font-bold text-white text-[5.73vw] md:text-[1.458vw] md:mt-0 mt-[5vw]">

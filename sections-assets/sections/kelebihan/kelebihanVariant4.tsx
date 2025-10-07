@@ -48,7 +48,7 @@ export default function kelebihan4() {
       <div className="w-[72.695vw] h-[147.116vw] md:w-[63.073vw] md:h-[15.417vw] mt-[5vw] md:mt-[2vw] md:flex md:flex-row md:items-center md:justify-evenly grid grid-cols-2">
         {sources.map((client, index) => (
           <div
-            className="w-[31.395vw] h-[42.326vw] md:w-[11.406vw] md:h-[15.417vw] flex flex-col items-center justify-center rounded-[7.184vw] md:rounded-[2.604vw] bg-[#4273CE] py-[1.667vw] hover:shadow-xl hover:scale-105 transition-all duration-300 group"
+            className="w-[31.395vw] h-[42.326vw] md:w-[11.406vw] md:h-[15.417vw] flex flex-col items-center justify-center rounded-[7.184vw] md:rounded-[2.604vw] bg-[var(--color-secondary)] py-[1.667vw] hover:shadow-xl hover:scale-105 transition-all duration-300 group"
             key={index}
           >
             <Image

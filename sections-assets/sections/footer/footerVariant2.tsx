@@ -5,8 +5,7 @@ export default function footer2() {
   return (
     <section className="w-screen h-[205.349vw] md:h-[19.583vw] md:aspect-[1920/1080] aspect-[430/883] flex flex-col justify-center items-center bg-white text-gray-800 relative">
       <div
-        className="w-full md:h-[16.927vw] h-[188.605vw] absolute top-0 p-[3vw] flex justify-center items-center"
-        style={{ background: "#F1F5F9" }}
+        className="w-full md:h-[16.927vw] h-[188.605vw] absolute top-0 p-[3vw] flex justify-center items-center bg-[var(--color-primary)] bg-opacity-10"
       >
         <div className="md:w-[73.958vw] md:h-[8.594vw] w-[81.395vw] h-[160.698vw] flex flex-col md:flex-row items-start justify-between">
           <div className="md:w-[20.99vw] md:h-[7.813vw] w-full h-[31.163vw]">

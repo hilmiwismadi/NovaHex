@@ -1,24 +1,18 @@
-import Image from "next/image";
+import { FaDesktop, FaWifi, FaCoffee } from "react-icons/fa";
 
 const sources = [
   {
-    src: "/image/kelebihan/desk.png",
-    width: "md:w-[2.318vw] w-[10.051vw]",
-    height: "md:h-[1.875vw] h-[8.109vw]",
+    icon: <FaDesktop className="text-[var(--color-primary)] md:text-[2.318vw] text-[10.051vw]" />,
     title: "Dedicated Desk",
     text: "With lots of unique blocks, you can easily build a page without coding. Build your next landing page.",
   },
   {
-    src: "/image/kelebihan/wifi.png",
-    width: "md:w-[2.063vw] w-[8.947vw]",
-    height: "md:h-[1.667vw] h-[7.228vw]",
+    icon: <FaWifi className="text-[var(--color-primary)] md:text-[2.063vw] text-[8.947vw]" />,
     title: "High Speed Internet",
     text: "With lots of unique blocks, you can easily build a page without coding. Build your next landing page.",
   },
   {
-    src: "/image/kelebihan/mug.png",
-    width: "md:w-[1.823vw] w-[7.907vw]",
-    height: "md:h-[2.083vw]  h-[9.035vw]",
+    icon: <FaCoffee className="text-[var(--color-primary)] md:text-[1.823vw] text-[7.907vw]" />,
     title: "Unlimited Coffee",
     text: "With lots of unique blocks, you can easily build a page without coding. Build your next landing page.",
   },
@@ -33,15 +27,11 @@ export default function kelebihan2() {
             className="w-full md:h-[7.083vw] h-[30.721vw] flex flex-row mr-0 md:mr-[1vw] group"
             key={index}
           >
-            <Image
-              src={client.src}
-              alt="Ornament Background"
-              width={10000}
-              height={10000}
-              className={`${client.width} ${client.height} mr-[5vw] md:mr-[1vw] object-cover hover:scale-110 transition-transform duration-300`}
-            />
+            <div className="mr-[5vw] md:mr-[1vw] hover:scale-110 transition-transform duration-300">
+              {client.icon}
+            </div>
             <div className="">
-              <h1 className="text-[4.744vw] md:text-[1.094vw] font-bold group-hover:text-[#1AB0C8] transition-colors duration-300">
+              <h1 className="text-[4.744vw] md:text-[1.094vw] font-bold group-hover:text-[var(--color-primary)] transition-colors duration-300">
                 {client.title}
               </h1>
               <p className="mt-[1.4vw] text-[3.84vw] md:text-[0.885vw] text-justify">

@@ -137,7 +137,7 @@ export default function Service4() {
 
   return (
     <section className="w-full aspect-[1920/1080] p-[3vw] relative">
-      <div className="bg-[rgba(255,237,223,1)] md:space-y-0 space-y-[5vw] md:pb-0 pb-[2vw] rounded-md">
+      <div className="bg-[var(--color-primary)] bg-opacity-10 md:space-y-0 space-y-[5vw] md:pb-0 pb-[2vw] rounded-md">
         <div className="flex gap-x-[1vw] py-[2.125vw] md:px-[3.125vw] px-[1vw]">
           <button onClick={handlePrev} className="md:mt-0 mt-[32vw] md:mx-0 mx-[1vw] hover:scale-110 transition-transform duration-300">
             <FaChevronLeft className="md:text-[1.2vw] text-[4vw]" />

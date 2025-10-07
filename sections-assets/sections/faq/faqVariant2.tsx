@@ -11,10 +11,10 @@ interface FaqDropdownProps {
 function FaqDropdownCard({ question, answer }: FaqDropdownProps) {
     const [isActive, setIsActive] = useState(false);
     return (
-        <div className="md:w-[66.667vw] w-[90.233vw] bg-[rgba(245,245,245,1)] md:p-[1vw] p-[2.4vw] rounded-lg md:m-[0.8vw] m-[2vw] shadow-md" onClick={() => setIsActive(!isActive)}>
+        <div className="md:w-[66.667vw] w-[90.233vw] bg-[rgba(245,245,245,1)] md:p-[1vw] p-[2.4vw] rounded-lg border-2 border-[var(--color-primary)] border-opacity-20 md:m-[0.8vw] m-[2vw] shadow-md" onClick={() => setIsActive(!isActive)}>
             <div className={`font-bold text-[1.042vw] flex items-center justify-between ${isActive ? "mb-[1vw]" : "my-[0.5vw]"}`}>
                 <p className="md:text-[1.25vw] text-[4.5vw]">{question}</p>
-                {isActive ? <FaMinus className="md:text-[0.9vw] text-[3.4vw]" /> : <FaChevronDown className="md:text-[0.9vw] text-[3.4vw] text-blue-700" />}
+                {isActive ? <FaMinus className="md:text-[0.9vw] text-[3.4vw] text-[var(--color-primary)]" /> : <FaChevronDown className="md:text-[0.9vw] text-[3.4vw] text-[var(--color-primary)]" />}
             </div>
             <p className={`md:h-[6.25vw] h-[53.953vw] md:text-[0.828vw] text-[4vw] md:mt-0 mt-[3vw] text-[rgba(116,116,116,1)] ${isActive ? "flex" : "hidden"}`}>
                 {answer}

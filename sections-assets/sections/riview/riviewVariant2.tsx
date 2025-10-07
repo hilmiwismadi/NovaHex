@@ -41,8 +41,8 @@ export default function Riview2() {
 
       {/* content */}
       <div className="ml-[4.166vw] mt-[4.6875vw] flex gap-x-[2vw] justify-between">
-        <button onClick={handlePrev}>
-          <IoChevronBackCircle className="md:text-[2vw] text-[5vw]" />
+        <button onClick={handlePrev} className="hover:scale-110 transition-transform duration-300">
+          <IoChevronBackCircle className="md:text-[2vw] text-[5vw] text-[var(--color-primary)] hover:text-[var(--color-secondary)] transition-colors duration-300" />
         </button>
         <div className="w-[69.4791vw] flex gap-x-[0.9vw]">
           <Swiper
@@ -68,15 +68,15 @@ export default function Riview2() {
                     alt={d.image_alt}
                     width={10000}
                     height={10000}
-                    className="md:w-[23.157vw] w-[55.116vw] md:h-[39.47916vw] h-[98.14vw] object-fill"
+                    className="md:w-[23.157vw] w-[55.116vw] md:h-[39.47916vw] h-[98.14vw] object-fill border-2 border-[var(--color-primary)] border-opacity-20 rounded-lg"
                   />
                 </div>
             </SwiperSlide>
             ))}
           </Swiper>
         </div>
-        <button onClick={handleNext}>
-          <IoChevronForwardCircle className="md:text-[2vw] text-[5vw]" />
+        <button onClick={handleNext} className="hover:scale-110 transition-transform duration-300">
+          <IoChevronForwardCircle className="md:text-[2vw] text-[5vw] text-[var(--color-primary)] hover:text-[var(--color-secondary)] transition-colors duration-300" />
         </button>
       </div>
       {/* content */}

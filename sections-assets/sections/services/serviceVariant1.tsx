@@ -35,7 +35,7 @@ export default function service1() {
   return (
     <section className="w-full md:min-h-[46.667vw] md:aspect-ratio[1920/1080] aspect-ratio[430/1551] p-4 sm:p-6 lg:p-8 flex flex-col justify-center items-center bg-white text-gray-800 relative">
       <div className="w-full sm:w-[90%] lg:w-[52.135vw] lg:h-[6.927vw] flex flex-col items-center justify-between gap-4 sm:gap-6">
-        <h1 className="font-bold text-base sm:text-lg lg:text-[1.25vw] text-[#4273CE]">
+        <h1 className="font-bold text-base sm:text-lg lg:text-[1.25vw] text-[var(--color-secondary)]">
           Our Services
         </h1>
         <h1 className="font-bold text-xl sm:text-2xl lg:text-[1.875vw] text-[#161C2D] text-center md:block hidden">

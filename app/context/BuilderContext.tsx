@@ -9,6 +9,12 @@ export interface SelectedSection {
   variantLabel: string;
 }
 
+export interface ColorTheme {
+  primary: string;
+  secondary: string;
+  tertiary: string;
+}
+
 interface BuilderContextType {
   selectedSections: SelectedSection[];
   toggleSection: (sectionId: number, sectionName: string) => void;
@@ -16,12 +22,22 @@ interface BuilderContextType {
   isSectionSelected: (sectionId: number) => boolean;
   getSelectedVariant: (sectionId: number) => string | null;
   clearSelections: () => void;
+  currentStep: number;
+  setCurrentStep: (step: number) => void;
+  colorTheme: ColorTheme;
+  updateColorTheme: (colors: ColorTheme) => void;
 }
 
 const BuilderContext = createContext<BuilderContextType | undefined>(undefined);
 
 export function BuilderProvider({ children }: { children: ReactNode }) {
   const [selectedSections, setSelectedSections] = useState<SelectedSection[]>([]);
+  const [currentStep, setCurrentStep] = useState(1); // 1: Section Selection, 2: Color Selection
+  const [colorTheme, setColorTheme] = useState<ColorTheme>({
+    primary: "#1AB0C8",   // Default ArachnoVa cyan
+    secondary: "#4273CE", // Default blue
+    tertiary: "#F65050",  // Default accent red
+  });
 
   const toggleSection = (sectionId: number, sectionName: string) => {
     setSelectedSections((prev) => {
@@ -59,6 +75,10 @@ export function BuilderProvider({ children }: { children: ReactNode }) {
     setSelectedSections([]);
   };
 
+  const updateColorTheme = (colors: ColorTheme) => {
+    setColorTheme(colors);
+  };
+
   return (
     <BuilderContext.Provider
       value={{
@@ -68,6 +88,10 @@ export function BuilderProvider({ children }: { children: ReactNode }) {
         isSectionSelected,
         getSelectedVariant,
         clearSelections,
+        currentStep,
+        setCurrentStep,
+        colorTheme,
+        updateColorTheme,
       }}
     >
       {children}

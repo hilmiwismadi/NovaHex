@@ -37,7 +37,7 @@ export default function cta3() {
           className="w-[99.535vw] h-[74.884vw] absolute -top-[3.594vw] right-0 md:hidden block rotate-[180deg] "
         />
         <div className="w-[82.813vw] h-[5.625vw] flex items-center justify-center mt-[8vw] md:mt-[1.5vw]">
-          <button className="md:w-[20.781vw] md:h-[5.625vw] w-[67.395vw] h-[18.242vw] flex items-center justify-center bg-[#593D29] rounded-[8.784vw] md:rounded-[2.708vw] hover:bg-[#593D35] transition">
+          <button className="md:w-[20.781vw] md:h-[5.625vw] w-[67.395vw] h-[18.242vw] flex items-center justify-center bg-[var(--color-primary)] hover:bg-[var(--color-tertiary)] rounded-[8.784vw] md:rounded-[2.708vw] hover:scale-105 transition-all duration-300">
             <div className="text-white text-[12.837vw] md:text-[3.958vw] mr-[0.7vw]">
               <FaWhatsapp />
             </div>

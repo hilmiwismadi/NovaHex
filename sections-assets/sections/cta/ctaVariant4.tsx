@@ -9,7 +9,7 @@ export default function cta4() {
         </h1>
         <a
           href=""
-          className="bg-[#407BFF] text-white font-bold w-[30.451vw] h-[8.984vw] md:w-[10.417vw] md:h-[3.073vw] rounded-[0.521vw] text-[2.588vw] md:text-[0.885vw] md:mt-[2vw] mt-[5vw] text-center flex items-center justify-center hover:scale-[102%] transition-all duration-700 ease-in-out"
+          className="bg-[var(--color-secondary)] text-white font-bold w-[30.451vw] h-[8.984vw] md:w-[10.417vw] md:h-[3.073vw] rounded-[0.521vw] text-[2.588vw] md:text-[0.885vw] md:mt-[2vw] mt-[5vw] text-center flex items-center justify-center hover:scale-[102%] transition-all duration-700 ease-in-out"
         >
           Start Shopping
         </a>

@@ -1,6 +1,6 @@
 "use client";
 
-import React, { Suspense } from "react";
+import React, { Suspense, useEffect } from "react";
 import { useSearchParams } from "next/navigation";
 
 // Import all section variants
@@ -128,6 +128,16 @@ const componentMap: Record<string, React.ComponentType> = {
 function BuildContent() {
   const searchParams = useSearchParams();
   const sectionsParam = searchParams.get("sections");
+  const primaryColor = searchParams.get("primary") || "#1AB0C8";
+  const secondaryColor = searchParams.get("secondary") || "#4273CE";
+  const tertiaryColor = searchParams.get("tertiary") || "#F65050";
+
+  // Apply custom colors to CSS variables
+  useEffect(() => {
+    document.documentElement.style.setProperty("--color-primary", primaryColor);
+    document.documentElement.style.setProperty("--color-secondary", secondaryColor);
+    document.documentElement.style.setProperty("--color-tertiary", tertiaryColor);
+  }, [primaryColor, secondaryColor, tertiaryColor]);
 
   if (!sectionsParam) {
     return (

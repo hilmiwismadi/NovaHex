@@ -30,7 +30,7 @@ function Pricing2Card({ feature, isMonthly }: CardProps) {
     <div className="md:w-[16vw] w-[68.14vw] md:h-full group hover:shadow-xl transition-shadow duration-300">
       <div
         className={`text-white md:text-[0.729vw] text-[3vw] md:h-[2vw] h-[5vw] ${
-          feature.isPopular ? "bg-blue-600" : ""
+          feature.isPopular ? "bg-[var(--color-primary)]" : ""
         } flex items-center rounded-t-lg justify-center gap-x-[0.5vw]`}
       >
         {feature.isPopular && (
@@ -60,14 +60,14 @@ function Pricing2Card({ feature, isMonthly }: CardProps) {
             </p>
           )}
         </div>
-        <button className="bg-blue-600 text-white font-semibold py-[0.417vw] px-[0.833vw] rounded-lg w-full mb-4 md:text-[0.833vw] text-[3.786vw] hover:scale-105 hover:shadow-lg transition-all duration-300">
+        <button className="bg-[var(--color-primary)] text-white font-semibold py-[0.417vw] px-[0.833vw] rounded-lg w-full mb-4 md:text-[0.833vw] text-[3.786vw] hover:scale-105 hover:shadow-lg transition-all duration-300">
           Get started
         </button>
         <p className="md:text-[0.833vw] text-[3.786vw] font-bold md:mb-[1vw] mb-[3vw]">{`All free ${feature.title}, plus:`}</p>
         <ul className="text-sm text-[3.312vw] text-gray-500 md:space-y-[0.529vw] space-y-[5vw]">
           {feature.features.map((item, index) => (
             <li key={index} className="flex items-center md:text-[0.629vw] text-[3vw]">
-              <span className="text-blue-600 mr-2">✔️</span> {item}
+              <span className="text-[var(--color-primary)] mr-2">✔️</span> {item}
             </li>
           ))}
         </ul>
@@ -168,7 +168,7 @@ export default function Pricing2() {
                 className="sr-only peer"
                 onChange={() => setIsMonthly(!isMonthly)}
               />
-              <div className="relative md:w-[2.864vw] md:h-[1.563vw] w-[7.65vw] h-[4.3vw] bg-gray-200 rounded-full peer peer-focus:ring-[0.208vw] peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[0.57vw] after:start-[0.40vw] md:after:top-[0.130vw] md:after:start-[0.10vw] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-[3.302vw] after:w-[3.302vw] md:after:h-[1.302vw] md:after:w-[1.302vw] after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
+              <div className="relative md:w-[2.864vw] md:h-[1.563vw] w-[7.65vw] h-[4.3vw] bg-gray-200 rounded-full peer peer-focus:ring-[0.208vw] peer-focus:ring-[var(--color-primary)] peer-focus:ring-opacity-30 dark:peer-focus:ring-blue-800 dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[0.57vw] after:start-[0.40vw] md:after:top-[0.130vw] md:after:start-[0.10vw] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-[3.302vw] after:w-[3.302vw] md:after:h-[1.302vw] md:after:w-[1.302vw] after:transition-all dark:border-gray-600 peer-checked:bg-[var(--color-primary)]"></div>
             </label>
             <p className="md:text-[0.9vw] text-[2.4vw] font-medium text-gray-900 dark:text-gray-300">
               Yearly

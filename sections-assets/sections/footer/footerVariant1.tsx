@@ -5,8 +5,7 @@ export default function footer1() {
   return (
     <section className="w-screen h-[175.116vw] md:h-[17.552vw] md:aspect-[1920/1080] aspect-[430/753] flex flex-col justify-start items-center bg-white text-gray-800 relative">
       <div
-        className="w-full md:h-[14.896vw] h-[158.372vw] md:p-[3vw] flex justify-center items-center"
-        style={{ background: "#407BFF" }}
+        className="w-full md:h-[14.896vw] h-[158.372vw] md:p-[3vw] flex justify-center items-center bg-[var(--color-primary)]"
       >
         {" "}
         {/*one*/}
@@ -58,8 +57,7 @@ export default function footer1() {
         </div>
       </div>
       <div
-        className="w-full md:h-[2.656vw] h-[16.744vw] flex items-center justify-center"
-        style={{ background: "#12388D" }}
+        className="w-full md:h-[2.656vw] h-[16.744vw] flex items-center justify-center bg-[var(--color-secondary)]"
       >
         {" "}
         {/*two*/}

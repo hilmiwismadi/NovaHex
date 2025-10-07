@@ -26,7 +26,7 @@ export default function Hero4() {
               <p className="text-sm sm:text-base lg:text-[1.1vw] lg:w-[31.25vw]">We're more than just a pet shop. We're a community of pet lovers dedicated to providing the best care for your furry companions.</p>
               <a
                 href=""
-                className="bg-[#4273CE] text-white font-semibold w-36 sm:w-40 lg:w-[6.667vw] h-12 sm:h-14 lg:h-[2.24vw] rounded-lg lg:rounded-[0.521vw] text-sm sm:text-base lg:text-[0.938vw] my-3 sm:my-4 lg:my-[1vw] text-center flex items-center justify-center hover:bg-[#5AB0BB] hover:scale-105 hover:shadow-lg transition-all duration-300"
+                className="bg-[var(--color-secondary)] text-white font-semibold w-36 sm:w-40 lg:w-[6.667vw] h-12 sm:h-14 lg:h-[2.24vw] rounded-lg lg:rounded-[0.521vw] text-sm sm:text-base lg:text-[0.938vw] my-3 sm:my-4 lg:my-[1vw] text-center flex items-center justify-center hover:bg-[var(--color-primary)] hover:scale-105 hover:shadow-lg transition-all duration-300"
               >
                 Book Now
               </a>

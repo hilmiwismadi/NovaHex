@@ -26,7 +26,7 @@ interface CardProps {
 
 function Card({ image_src, image_alt, name, quote, occupation }: CardProps) {
     return (
-        <div className="md:w-[18.2291vw] md:h-[18.9583vw] md:p-[1.5625vw] p-[5.5vw] w-[76.279vw] h-[78.372vw] bg-white rounded-md flex flex-col justify-evenly">
+        <div className="md:w-[18.2291vw] md:h-[18.9583vw] md:p-[1.5625vw] p-[5.5vw] w-[76.279vw] h-[78.372vw] bg-white rounded-md flex flex-col justify-evenly border-2 border-[var(--color-primary)] border-opacity-20">
             <Image src={image_src} alt={image_alt} width={100} height={100} className="md:w-[2.8125vw] md:h-[2.8125vw] w-[11.628vw] h-[11.628vw]" />
             <h1 className="md:text-[1.09375vw] text-[4.533vw]">{quote}</h1>
             <div className="md:text-[0.8854vw] text-[3.67vw]">

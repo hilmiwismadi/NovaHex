@@ -48,31 +48,31 @@ export default function Navbar4() {
             </div>
             <p className="text-base sm:text-lg lg:text-[1.02vw]">Arachnova</p>
           </div>
-          <a href="" className="font-bold text-sm lg:text-[0.9vw] md:flex hidden hover:text-[rgba(66,115,206,1)] transition-colors duration-300">
+          <a href="" className="font-bold text-sm lg:text-[0.9vw] md:flex hidden text-[var(--color-primary)] hover:text-[var(--color-tertiary)] transition-colors duration-300 relative after:content-[''] after:absolute after:w-0 after:h-[2px] after:bottom-[-4px] after:left-0 after:bg-[var(--color-tertiary)] after:transition-all after:duration-300 hover:after:w-full">
             Home
           </a>
-          <a href="" className="font-bold text-sm lg:text-[0.9vw] md:flex hidden hover:text-[rgba(66,115,206,1)] transition-colors duration-300">
+          <a href="" className="font-bold text-sm lg:text-[0.9vw] md:flex hidden text-[var(--color-primary)] hover:text-[var(--color-tertiary)] transition-colors duration-300 relative after:content-[''] after:absolute after:w-0 after:h-[2px] after:bottom-[-4px] after:left-0 after:bg-[var(--color-tertiary)] after:transition-all after:duration-300 hover:after:w-full">
             About Us
           </a>
-          <a href="" className="font-bold text-sm lg:text-[0.9vw] md:flex hidden hover:text-[rgba(66,115,206,1)] transition-colors duration-300">
+          <a href="" className="font-bold text-sm lg:text-[0.9vw] md:flex hidden text-[var(--color-primary)] hover:text-[var(--color-tertiary)] transition-colors duration-300 relative after:content-[''] after:absolute after:w-0 after:h-[2px] after:bottom-[-4px] after:left-0 after:bg-[var(--color-tertiary)] after:transition-all after:duration-300 hover:after:w-full">
             Pricing
           </a>
         </div>
-        <button className="text-sm lg:text-[0.82vw] bg-[rgba(66,115,206,1)] border-2 border-[rgba(66,115,206,1)] p-2 lg:p-[0.5vw] rounded-md text-white md:flex hidden hover:bg-blue-700 hover:scale-105 hover:shadow-lg transition-all duration-300">
+        <button className="text-sm lg:text-[0.82vw] bg-[var(--color-primary)] border-2 border-[var(--color-primary)] p-2 lg:p-[0.5vw] rounded-md text-white md:flex hidden hover:bg-[var(--color-tertiary)] hover:scale-105 hover:shadow-lg transition-all duration-300">
           Contact Us
         </button>
 
         <button onClick={() => setIsExpand(!isExpand)} className="flex md:hidden">
-          <GiHamburgerMenu className="text-blue-500 text-[5vw] hover:rotate-12 transition-transform duration-300" />
+          <GiHamburgerMenu className="text-[var(--color-primary)] text-[5vw] hover:rotate-12 transition-transform duration-300" />
         </button>
       </div>
       <div className={`w-full px-4 sm:px-6 lg:px-[3.121vw] flex md:hidden flex-col space-y-3 sm:space-y-4 items-center justify-center bg-white/60 transition-all duration-500 ease-in-out ${isExpand ? "max-h-[500px] opacity-100 py-4 sm:py-6" : "max-h-0 opacity-0 overflow-hidden"}`}>
-        <a href="" className="w-full flex justify-center md:hidden font-semibold text-sm sm:text-base hover:text-[rgba(66,115,206,1)] transition-colors duration-300">Home</a>
-        <a href="" className="w-full flex justify-center md:hidden font-semibold text-sm sm:text-base hover:text-[rgba(66,115,206,1)] transition-colors duration-300">About Us</a>
-        <a href="" className="w-full flex justify-center md:hidden font-semibold text-sm sm:text-base hover:text-[rgba(66,115,206,1)] transition-colors duration-300">Pricing</a>
-        <a href="" className="w-full flex justify-center md:hidden font-semibold text-sm sm:text-base hover:text-[rgba(66,115,206,1)] transition-colors duration-300"></a>
-        <a href="" className="w-full flex justify-center md:hidden font-semibold text-sm sm:text-base hover:text-[rgba(66,115,206,1)] transition-colors duration-300"></a>
-        <button className="w-full flex justify-center md:hidden text-sm sm:text-base bg-blue-500 p-3 sm:p-4 rounded-lg text-white hover:bg-blue-700 hover:scale-105 transition-all duration-300">Contact Us</button>
+        <a href="" className="w-full flex justify-center md:hidden font-semibold text-sm sm:text-base text-[var(--color-primary)] hover:text-[var(--color-tertiary)] transition-colors duration-300">Home</a>
+        <a href="" className="w-full flex justify-center md:hidden font-semibold text-sm sm:text-base text-[var(--color-primary)] hover:text-[var(--color-tertiary)] transition-colors duration-300">About Us</a>
+        <a href="" className="w-full flex justify-center md:hidden font-semibold text-sm sm:text-base text-[var(--color-primary)] hover:text-[var(--color-tertiary)] transition-colors duration-300">Pricing</a>
+        <a href="" className="w-full flex justify-center md:hidden font-semibold text-sm sm:text-base text-[var(--color-primary)] hover:text-[var(--color-tertiary)] transition-colors duration-300"></a>
+        <a href="" className="w-full flex justify-center md:hidden font-semibold text-sm sm:text-base text-[var(--color-primary)] hover:text-[var(--color-tertiary)] transition-colors duration-300"></a>
+        <button className="w-full flex justify-center md:hidden text-sm sm:text-base bg-[var(--color-primary)] p-3 sm:p-4 rounded-lg text-white hover:bg-[var(--color-tertiary)] hover:scale-105 transition-all duration-300">Contact Us</button>
       </div>
     </div>
   );

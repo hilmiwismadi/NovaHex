@@ -61,7 +61,7 @@ function CardTitle({ feature }: CardTitleProps) {
             <div className="flex flex-col justify-center items-center">
                 {featureEntries.map(([key, value]) => (
                     <div
-                        className="md:h-[4.166vw] h-[28.837vw] border border-b-black w-full flex flex-col justify-center items-center"
+                        className="md:h-[4.166vw] h-[28.837vw] border border-b-[var(--color-secondary)] border-opacity-20 w-full flex flex-col justify-center items-center"
                         key={key}
                     >
                         <p className="font-bold md:text-[0.9375vw] text-[4.186vw] md:text-start text-center">{value}</p>
@@ -90,7 +90,7 @@ function CardPricing({ type, desc, fee, pages, usersPerPage, features }: CardCon
                     </p>
                 )}
                 <p className="md:text-[0.729vw] text-[2.57vw]">{desc}</p>
-                <button className="bg-[rgba(66,115,206,1)] text-white py-[0.5vw] px-[1vw] md:w-[15.83vw] md:h-fit w-[22.326vw] h-[13.333vw] rounded-md md:mt-[1vw] mt-[3vw] md:text-[0.833vw] text-[2.5vw] hover:scale-105 hover:shadow-lg transition-all duration-300">
+                <button className="bg-[var(--color-primary)] hover:bg-[var(--color-secondary)] text-white py-[0.5vw] px-[1vw] md:w-[15.83vw] md:h-fit w-[22.326vw] h-[13.333vw] rounded-md md:mt-[1vw] mt-[3vw] md:text-[0.833vw] text-[2.5vw] hover:scale-105 hover:shadow-lg transition-all duration-300">
                     Choose This Plan
                 </button>
             </div>
@@ -98,13 +98,13 @@ function CardPricing({ type, desc, fee, pages, usersPerPage, features }: CardCon
 
             {/* pricing content */}
             <div className="flex flex-col justify-center items-center">
-                <div className="md:h-[4.166vw] h-[28.837vw] border border-b-black w-full flex flex-col justify-center items-center">
+                <div className="md:h-[4.166vw] h-[28.837vw] border border-b-[var(--color-secondary)] border-opacity-20 w-full flex flex-col justify-center items-center">
                     <p className="font-bold md:text-[0.8375vw] text-[3.256vw]">
                         {pages.numPages === -1 ? "Unlimited" : pages.numPages.toLocaleString()} Pages
                     </p>
                     <p className="text-gray-600 md:text-[0.9375vw] text-[1.8vw]">{pages.desc}</p>
                 </div>
-                <div className="md:h-[4.166vw] h-[28.837vw] border border-b-black w-full flex flex-col justify-center items-center">
+                <div className="md:h-[4.166vw] h-[28.837vw] border border-b-[var(--color-secondary)] border-opacity-20 w-full flex flex-col justify-center items-center">
                     <p className="font-bold md:text-[0.9375vw] text-[3.256vw]">
                         {usersPerPage.numUserPages === -1
                             ? "Unlimited"
@@ -115,7 +115,7 @@ function CardPricing({ type, desc, fee, pages, usersPerPage, features }: CardCon
                 </div>
                 {Object.keys(features).map((featureKey) => (
                     <div
-                        className="md:h-[4.166vw] h-[28.837vw] border border-b-black w-full flex justify-center items-center"
+                        className="md:h-[4.166vw] h-[28.837vw] border border-b-[var(--color-secondary)] border-opacity-20 w-full flex justify-center items-center"
                         key={featureKey}
                     >
                         {(features[featureKey as keyof typeof features]) ? (

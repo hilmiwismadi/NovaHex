@@ -25,11 +25,11 @@ export default function Navbar1() {
           </div>
           {/* hidden when the size is in mobile mode */}
           <div className="md:flex hidden gap-x-3 items-center text-sm lg:text-[0.781vw]">
-            <a href="" className="hover:text-[#4273CE] transition-colors duration-300">Home</a>
-            <a href="" className="hover:text-[#4273CE] transition-colors duration-300">About Us</a>
-            <a href="" className="hover:text-[#4273CE] transition-colors duration-300">Pricing</a>
-            <a href="" className="hover:text-[#4273CE] transition-colors duration-300">Page</a>
-            <button className="p-2 lg:p-[0.417vw] border-2 lg:border-[0.104vw] border-[#4273CE] rounded-lg lg:rounded-[0.521vw] text-[#4273CE] ml-3 lg:ml-[0.8vw] hover:bg-[#4273CE] hover:text-white hover:scale-105 hover:shadow-lg transition-all duration-300">Contact Us</button>
+            <a href="" className="hover:text-[var(--color-secondary)] transition-colors duration-300">Home</a>
+            <a href="" className="hover:text-[var(--color-secondary)] transition-colors duration-300">About Us</a>
+            <a href="" className="hover:text-[var(--color-secondary)] transition-colors duration-300">Pricing</a>
+            <a href="" className="hover:text-[var(--color-secondary)] transition-colors duration-300">Page</a>
+            <button className="p-2 lg:p-[0.417vw] border-2 lg:border-[0.104vw] border-[var(--color-secondary)] rounded-lg lg:rounded-[0.521vw] text-[var(--color-secondary)] ml-3 lg:ml-[0.8vw] hover:bg-[var(--color-secondary)] hover:text-white hover:scale-105 hover:shadow-lg transition-all duration-300">Contact Us</button>
           </div>
 
           <button onClick={() => setIsExpand(!isExpand)} className="flex md:hidden">

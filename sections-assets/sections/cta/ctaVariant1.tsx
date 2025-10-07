@@ -12,7 +12,7 @@ export default function cta1() {
             Your projects.
           </span>
         </h1>
-        <h1 className="md:w-[91.667vw] md:h-[3.229vw] w-[82.326vw] h-[28.837vw] text-[#407BFF] flex justify-center items-center md:text-[2.917vw] text-[13.023vw] text-center font-bold mt-[0.2vw] md:mt-[1vw] leading-[15vw]">
+        <h1 className="md:w-[91.667vw] md:h-[3.229vw] w-[82.326vw] h-[28.837vw] text-[var(--color-secondary)] flex justify-center items-center md:text-[2.917vw] text-[13.023vw] text-center font-bold mt-[0.2vw] md:mt-[1vw] leading-[15vw]">
           <span className="md:block hidden">Always together.</span>
           <span className="md:hidden block">
             Always
@@ -25,7 +25,7 @@ export default function cta1() {
         </p>
         <a
           href="#"
-          className="md:w-[27.5vw] md:h-[2.917vw] w-[82.326vw] h-[13.023vw] flex justify-center items-center bg-[#407BFF] rounded-[1.86vw] md:rounded-[0.521vw] mt-[1.7vw]"
+          className="md:w-[27.5vw] md:h-[2.917vw] w-[82.326vw] h-[13.023vw] flex justify-center items-center bg-[var(--color-secondary)] rounded-[1.86vw] md:rounded-[0.521vw] mt-[1.7vw]"
         >
           <h1 className="text-black font-bold text-[4.651vw] md:text-[1.042vw]">
             Start For Free

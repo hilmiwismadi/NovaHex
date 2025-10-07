@@ -40,7 +40,7 @@ export default function AboutUs3() {
           </div>
         </div>
         <div className="w-full lg:w-[29.219vw] lg:h-[14.219vw] ml-0 lg:ml-[4.5vw]">
-          <h1 className="font-bold text-3xl sm:text-4xl lg:text-[2.604vw] text-[#F65050] mt-4 sm:mt-6 lg:mt-0">
+          <h1 className="font-bold text-3xl sm:text-4xl lg:text-[2.604vw] text-[var(--color-tertiary)] mt-4 sm:mt-6 lg:mt-0">
             About us
           </h1>
           <p className="text-sm sm:text-base lg:text-[1.042vw] text-justify">
