@@ -36,18 +36,20 @@ export default function service2() {
       <div className="md:w-[92.188vw] md:h-[22.865vw] w-[84.707vw] h-[214.616vw] flex flex-col md:flex-row items-center justify-between mt-[2vw]">
         {sources.map((client, index) => (
           <div
-            className="md:w-[29.063vw] md:h-[22.865vw] w-[84.707vw] h-[66.681vw] flex flex-col"
+            className="md:w-[29.063vw] md:h-[22.865vw] w-[84.707vw] h-[66.681vw] flex flex-col group"
             key={index}
           >
-            <Image
-              src={client.src}
-              alt="Ornament Background"
-              width={10000}
-              height={10000}
-              className={`${client.width} ${client.height} rounded-[1.563vw]`}
-            />
+            <div className="overflow-hidden rounded-[1.563vw]">
+              <Image
+                src={client.src}
+                alt="Ornament Background"
+                width={10000}
+                height={10000}
+                className={`${client.width} ${client.height} hover:scale-105 transition-transform duration-300`}
+              />
+            </div>
             <div className="flex flex-col items-start">
-              <p className="font-bold text-[3.644vw] md:text-[1.25vw] mt-[1vw]">
+              <p className="font-bold text-[3.644vw] md:text-[1.25vw] mt-[1vw] group-hover:text-[#CE4244] transition-colors duration-300">
                 {client.title}
               </p>
               <p className="text-[2.733vw] md:text-[0.938vw] mt-[0.2vw] md:leading-[2vw]">

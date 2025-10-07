@@ -23,34 +23,34 @@ export default function Gallery3() {
         {/* title */}
 
         {/* content */}
-        <div className="absolute top-[5.682vw] left-[45.844vw]">
+        <div className="absolute top-[5.682vw] left-[45.844vw] overflow-hidden rounded-lg">
           <Image
             src="/image/gallery/gallery3/gallery2.png"
             alt="gallery"
             width={10000}
             height={10000}
-            className="rounded-lg object-cover w-[7.031vw]"
+            className="rounded-lg object-cover w-[7.031vw] hover:scale-105 transition-transform duration-300"
           />
         </div>
-        <div className="absolute top-[12.457vw] left-[38.242vw]">
+        <div className="absolute top-[12.457vw] left-[38.242vw] overflow-hidden rounded-lg">
           <Image
             src="/image/gallery/gallery3/gallery1.png"
             alt="gallery"
             width={10000}
             height={10000}
-            className="rounded-lg object-cover w-[7.031vw]"
+            className="rounded-lg object-cover w-[7.031vw] hover:scale-105 transition-transform duration-300"
           />
         </div>
-        <div className="absolute top-[3.42vw] left-[53.447vw]">
+        <div className="absolute top-[3.42vw] left-[53.447vw] overflow-hidden rounded-lg">
           <Image
             src="/image/gallery/gallery3/gallery3.png"
             alt="gallery"
             width={10000}
             height={10000}
-            className="rounded-lg object-cover w-[23.906vw]"
+            className="rounded-lg object-cover w-[23.906vw] hover:scale-105 transition-transform duration-300"
           />
         </div>
-        <div className="absolute top-[27.406vw] left-[12.729vw]">
+        <div className="absolute top-[27.406vw] left-[12.729vw] overflow-hidden rounded-lg">
           {" "}
           {/* plant */}
           <Image
@@ -58,10 +58,10 @@ export default function Gallery3() {
             alt="gallery"
             width={10000}
             height={10000}
-            className="rounded-lg object-cover w-[7.031vw]"
+            className="rounded-lg object-cover w-[7.031vw] hover:scale-105 transition-transform duration-300"
           />
         </div>
-        <div className="absolute top-[22.969vw] left-[21.331vw]">
+        <div className="absolute top-[22.969vw] left-[21.331vw] overflow-hidden rounded-lg">
           {" "}
           {/* idea */}
           <Image
@@ -69,16 +69,16 @@ export default function Gallery3() {
             alt="gallery"
             width={10000}
             height={10000}
-            className="rounded-lg object-cover w-[23.928vw]"
+            className="rounded-lg object-cover w-[23.928vw] hover:scale-105 transition-transform duration-300"
           />
         </div>
-        <div className="absolute top-[16.143vw] left-[43.944vw]">
+        <div className="absolute top-[16.143vw] left-[43.944vw] overflow-hidden rounded-lg">
           <Image
             src="/image/gallery/gallery3/gallery6.png"
             alt="gallery"
             width={10000}
             height={10000}
-            className="rounded-lg object-cover w-[32.5vw]"
+            className="rounded-lg object-cover w-[32.5vw] hover:scale-105 transition-transform duration-300"
           />
         </div>
         {/* content */}

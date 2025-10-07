@@ -19,17 +19,17 @@ interface CardProps {
 
 function ServiceCard({ name, detail, icon }: CardProps) {
   return (
-    <div className="md:w-[19.427vw] h-[42.558vw] w-[71.628vw] md:h-[12.656vw] shadow-md md:py-[1.875vw] md:px-[2.135vw] p-[5vw] rounded-lg md:space-y-0 space-y-[3vw] md:my-0 my-[2vw]">
+    <div className="md:w-[19.427vw] h-[42.558vw] w-[71.628vw] md:h-[12.656vw] shadow-md md:py-[1.875vw] md:px-[2.135vw] p-[5vw] rounded-lg md:space-y-0 space-y-[3vw] md:my-0 my-[2vw] hover:shadow-xl transition-shadow duration-300 group">
       <div className="flex items-center md:gap-x-[0.8vw] gap-x-[1vw]">
-        <div className="md:w-[2.5vw] md:h-[2.5vw] w-[8.372vw] h-[8.372vw] md:text-[2.1vw] text-[8.372vw] rounded-md flex items-center justify-center">
+        <div className="md:w-[2.5vw] md:h-[2.5vw] w-[8.372vw] h-[8.372vw] md:text-[2.1vw] text-[8.372vw] rounded-md flex items-center justify-center hover:scale-110 transition-transform duration-300">
           {icon}
         </div>
         <h1 className="md:text-[1.25vw] text-[4.172vw] font-bold">{name}</h1>
       </div>
       <p className="my-[1vw] md:text-[0.833vw] text-[2.781vw] text-[rgba(100,100,100,1)]">{detail}</p>
-      <a href="#" className="md:text-[0.938vw] text-[2.28vw] text-blue-600 flex items-center justify-center w-fit gap-x-[1vw]">
+      <a href="#" className="md:text-[0.938vw] text-[2.28vw] text-blue-600 flex items-center justify-center w-fit gap-x-[1vw] hover:text-[#1AB0C8] transition-colors duration-300">
         <p className="font-bold">Learn More</p>
-        <FaChevronRight />
+        <FaChevronRight className="group-hover:translate-x-1 transition-transform duration-300" />
       </a>
     </div>
   );
@@ -136,7 +136,7 @@ export default function Service3() {
       <div className="flex items-center justify-center mt-[2vw]">
         {/* Prev Button */}
         <button
-        className="mt-[0.2vw] mx-[0.9vw] hidden md:flex"
+        className="mt-[0.2vw] mx-[0.9vw] hidden md:flex hover:scale-110 transition-transform duration-300"
           onClick={handlePrev}
         >
           <FaChevronLeft className="text-[1vw]" />
@@ -147,7 +147,7 @@ export default function Service3() {
 
         {/* Next Button */}
         <button
-        className="mt-[0.2vw] mx-[0.9vw] hidden md:flex"
+        className="mt-[0.2vw] mx-[0.9vw] hidden md:flex hover:scale-110 transition-transform duration-300"
           onClick={handleNext}
         >
           <FaChevronRight className="text-[1vw]" />

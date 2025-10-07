@@ -53,16 +53,18 @@ export default function teams1() {
         <div className="md:w-[62.5vw] md:h-[15.833vw] w-[64.186vw] h-[305.116vw] flex flex-col md:flex-row items-center justify-between mt-[2vw]">
           {sources.map((client, index) => (
             <div
-              className="md:w-[14.375vw] md:h-[15.833vw] w-[64.186vw] h-[70.698vw] flex flex-col items-center bg-[#F9F9F9] rounded-[2.326vw] md:rounded-[0.521vw] border-[0.052vw] border-[#D4D4D4] p-[3vw] md:p-[1.25vw]"
+              className="md:w-[14.375vw] md:h-[15.833vw] w-[64.186vw] h-[70.698vw] flex flex-col items-center bg-[#F9F9F9] rounded-[2.326vw] md:rounded-[0.521vw] border-[0.052vw] border-[#D4D4D4] p-[3vw] md:p-[1.25vw] hover:shadow-xl transition-shadow duration-300 group"
               key={index}
             >
-              <Image
-                src={client.src}
-                alt="Ornament Background"
-                width={10000}
-                height={10000}
-                className={`${client.width} ${client.height} object-cover md:mt-0 mt-[3vw]`}
-              />
+              <div className="overflow-hidden rounded-full">
+                <Image
+                  src={client.src}
+                  alt="Ornament Background"
+                  width={10000}
+                  height={10000}
+                  className={`${client.width} ${client.height} object-cover md:mt-0 mt-[3vw] group-hover:scale-110 transition-transform duration-300`}
+                />
+              </div>
               <p className="font-bold text-[4.186vw] md:text-[0.938vw] mt-[3vw] md:mt-[0.5vw]">
                 {client.title}
               </p>

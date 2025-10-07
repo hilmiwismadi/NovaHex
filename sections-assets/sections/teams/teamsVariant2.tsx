@@ -41,16 +41,18 @@ export default function teams2() {
       <div className="md:w-[67.083vw] md:h-[17.917vw] w-[87.442vw] h-[277.209vw] flex flex-col md:flex-row justify-between mt-[2vw]">
         {sources.map((client, index) => (
           <div
-            className="relative md:w-[19.583vw] md:h-[17.917vw] w-full h-[80vw] flex flex-col items-center"
+            className="relative md:w-[19.583vw] md:h-[17.917vw] w-full h-[80vw] flex flex-col items-center group"
             key={index}
           >
-            <Image
-              src={client.src}
-              alt="Ornament Background"
-              width={10000}
-              height={10000}
-              className={`${client.width} ${client.height} object-cover`}
-            />
+            <div className="overflow-hidden rounded-full">
+              <Image
+                src={client.src}
+                alt="Ornament Background"
+                width={10000}
+                height={10000}
+                className={`${client.width} ${client.height} object-cover group-hover:scale-110 transition-transform duration-300`}
+              />
+            </div>
             <p className="font-bold text-[5.581vw] md:text-[1.25vw] mt-[2vw] md:mt-[0.5vw]">
               {client.title}
             </p>
@@ -66,14 +68,14 @@ export default function teams2() {
                 alt="Ornament Background"
                 width={10000}
                 height={10000}
-                className="md:w-[1.042vw] md:h-[1.042vw] w-[4.651vw] h-[4.651vw] mr-[2vw] md:mr-[0.7vw]"
+                className="md:w-[1.042vw] md:h-[1.042vw] w-[4.651vw] h-[4.651vw] mr-[2vw] md:mr-[0.7vw] hover:scale-110 transition-transform duration-300 cursor-pointer"
               />
               <Image
                 src="/image/teams/linkedin.png"
                 alt="Ornament Background"
                 width={10000}
                 height={10000}
-                className="md:w-[1.042vw] md:h-[1.042vw] w-[4.651vw] h-[4.651vw]"
+                className="md:w-[1.042vw] md:h-[1.042vw] w-[4.651vw] h-[4.651vw] hover:scale-110 transition-transform duration-300 cursor-pointer"
               />
             </div>
           </div>

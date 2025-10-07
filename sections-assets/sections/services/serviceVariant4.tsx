@@ -31,23 +31,26 @@ function CardService({title, mainImageUrl, showImageUrl, productName, desciption
         <div className="flex flex-col md:flex-row gap-x-[1vw] md:justify-start justify-center items-center md:items-start">
           {/* images */}
           <div className="flex flex-col md:flex-row gap-x-[0.5vw]">
-            <Image
-              src={mainImageUrl}
-              alt="service"
-              width={10000}
-              height={10000}
-              className="md:w-[25vw] md:h-[25vw] w-[76.977vw] h-[76.977vw]"
-            />
+            <div className="overflow-hidden rounded-lg">
+              <Image
+                src={mainImageUrl}
+                alt="service"
+                width={10000}
+                height={10000}
+                className="md:w-[25vw] md:h-[25vw] w-[76.977vw] h-[76.977vw] hover:scale-105 transition-transform duration-300"
+              />
+            </div>
             <div className="flex md:flex-col gap-y-[1vw] gap-x-[2vw] md:mt-0 mt-[2vw]">
               {showImageUrl.map((d, index) => (
-                <Image
-                  key={index}
-                  src={d}
-                  alt="service"
-                  width={10000}
-                  height={10000}
-                  className="md:w-[9.844vw] md:h-[5.885vw] w-[24.186vw] h-[14.419vw]"
-                />
+                <div key={index} className="overflow-hidden rounded-lg">
+                  <Image
+                    src={d}
+                    alt="service"
+                    width={10000}
+                    height={10000}
+                    className="md:w-[9.844vw] md:h-[5.885vw] w-[24.186vw] h-[14.419vw] hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
               ))}
             </div>
           </div>
@@ -136,7 +139,7 @@ export default function Service4() {
     <section className="w-full aspect-[1920/1080] p-[3vw] relative">
       <div className="bg-[rgba(255,237,223,1)] md:space-y-0 space-y-[5vw] md:pb-0 pb-[2vw] rounded-md">
         <div className="flex gap-x-[1vw] py-[2.125vw] md:px-[3.125vw] px-[1vw]">
-          <button onClick={handlePrev} className="md:mt-0 mt-[32vw] md:mx-0 mx-[1vw]">
+          <button onClick={handlePrev} className="md:mt-0 mt-[32vw] md:mx-0 mx-[1vw] hover:scale-110 transition-transform duration-300">
             <FaChevronLeft className="md:text-[1.2vw] text-[4vw]" />
           </button>
           <Swiper
@@ -177,7 +180,7 @@ export default function Service4() {
             ))}
             <div className="h-[12vw] md:hidden flex"></div>
           </Swiper>
-          <button onClick={handleNext} className="md:mt-0 mt-[32vw] md:mx-0 mx-[1vw]">
+          <button onClick={handleNext} className="md:mt-0 mt-[32vw] md:mx-0 mx-[1vw] hover:scale-110 transition-transform duration-300">
             <FaChevronRight className="md:text-[1.2vw] text-[4vw]" />
           </button>
         </div>

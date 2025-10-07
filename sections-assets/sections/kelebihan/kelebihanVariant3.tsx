@@ -37,7 +37,7 @@ export default function kelebihan3() {
       <div className="md:w-[69.479vw] md:h-[3.646vw] w-[78.372vw] h-[110.465vw] flex md:flex-row flex-col items-center md:justify-center justify-between">
         {sources.map((client, index) => (
           <div
-            className="md:w-[17.552vw] md:h-[3.646vw] w-full h-[16.279vw] flex flex-row items-center justify-start md:justify-center"
+            className="md:w-[17.552vw] md:h-[3.646vw] w-full h-[16.279vw] flex flex-row items-center justify-start md:justify-center group"
             key={index}
           >
             <Image
@@ -45,10 +45,10 @@ export default function kelebihan3() {
               alt="Ornament Background"
               width={10000}
               height={10000}
-              className={`${client.width} ${client.height} mr-[2.5vw] md:mr-[1vw] object-cover`}
+              className={`${client.width} ${client.height} mr-[2.5vw] md:mr-[1vw] object-cover hover:scale-110 transition-transform duration-300`}
             />
             <div className="">
-              <h1 className="text-[5.814vw] md:text-[1.094vw] font-bold">
+              <h1 className="text-[5.814vw] md:text-[1.094vw] font-bold group-hover:text-[#1AB0C8] transition-colors duration-300">
                 {client.title}
               </h1>
               <p className="text-[5vw] md:text-[0.885vw] text-[#898989]">

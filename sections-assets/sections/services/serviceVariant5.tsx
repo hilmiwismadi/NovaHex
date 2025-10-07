@@ -24,15 +24,17 @@ interface cardProps {
 
 function CardService({ image_path, type, title, description }: cardProps) {
   return (
-    <div className="md:w-[22.104vw] w-[68.837vw] md:h-[31.688vw] h-[87.209vw] md:p-[0.5vw]  font-roboto shadow-lg rounded-xl m-[1vw]">
-      <Image alt="service image" src={image_path} width={10000} height={10000} className="md:w-[20.104vw] w-[68.837vw] md:h-[11.458vw] h-[35.581vw] mb-[1vw] md:p-0 p-[1vw] md:rounded-none rounded-lg" />
+    <div className="md:w-[22.104vw] w-[68.837vw] md:h-[31.688vw] h-[87.209vw] md:p-[0.5vw]  font-roboto shadow-lg rounded-xl m-[1vw] hover:shadow-xl transition-shadow duration-300 group">
+      <div className="overflow-hidden md:rounded-none rounded-lg">
+        <Image alt="service image" src={image_path} width={10000} height={10000} className="md:w-[20.104vw] w-[68.837vw] md:h-[11.458vw] h-[35.581vw] mb-[1vw] md:p-0 p-[1vw] hover:scale-105 transition-transform duration-300" />
+      </div>
       <p className="font-bold md:text-[0.833vw] text-[2.593vw] md:mb-[0.5vw] mb-[3vw] md:p-0 px-[5vw] md:mt-0 mt-[2vw]">{type}</p>
       <h1 className="font-bold md:text-[1.25vw] text-[3.888vw] md:mb-[0.5vw] mb-[3vw] md:p-0 px-[5vw]">{title}</h1>
       <p className="md:text-[0.938vw] text-[2.916vw] md:mb-[2vw] mb-[3vw] md:p-0 px-[5vw]">{description}</p>
       <div className="md:px-0 px-[5vw]">
-        <button className="w-full flex items-center gap-x-[0.8vw] p-[1vw] md:text-[0.833vw] text-[2.593vw] font-bold text-white bg-blue-500 rounded-md justify-center">
+        <button className="w-full flex items-center gap-x-[0.8vw] p-[1vw] md:text-[0.833vw] text-[2.593vw] font-bold text-white bg-blue-500 rounded-md justify-center hover:scale-105 hover:shadow-lg transition-all duration-300">
           <p>Button Text</p>
-          <FaArrowRight />
+          <FaArrowRight className="group-hover:translate-x-1 transition-transform duration-300" />
         </button>
       </div>
     </div>
@@ -65,7 +67,7 @@ export default function Service5() {
 
       {/* content */}
       <div className="md:ml-[4.166vw] mt-[2.6875vw] flex gap-x-[2vw] justify-between">
-        <button onClick={handlePrev}>
+        <button onClick={handlePrev} className="hover:scale-110 transition-transform duration-300">
           <FaChevronLeft className="md:text-[1.2vw] text-[2.5vw]" />
         </button>
         <div className="flex gap-x-[0.9vw] p-[1vw]">
@@ -92,7 +94,7 @@ export default function Service5() {
             ))}
           </Swiper>
         </div>
-        <button onClick={handleNext}>
+        <button onClick={handleNext} className="hover:scale-110 transition-transform duration-300">
           <FaChevronRight className="md:text-[1.2vw] text-[2.5vw]" />
         </button>
       </div>

@@ -55,16 +55,18 @@ export default function teams3() {
         <div className="flex flex-col md:flex-row items-center justify-between">
           {sources1.map((client, index) => (
             <div
-              className="md:w-[17.578vw] md:h-[15.208vw] w-full h-[67.907vw] flex flex-col items-center bg-[#F9FAFB] p-[2vw] md:p-[1.25vw] md:mb-0 mb-[5vw] relative"
+              className="md:w-[17.578vw] md:h-[15.208vw] w-full h-[67.907vw] flex flex-col items-center bg-[#F9FAFB] p-[2vw] md:p-[1.25vw] md:mb-0 mb-[5vw] relative hover:shadow-xl transition-shadow duration-300 group"
               key={index}
             >
-              <Image
-                src={client.src}
-                alt="Ornament Background"
-                width={10000}
-                height={10000}
-                className={`${client.width} ${client.height} object-cover md:mt-0 mt-[3vw]`}
-              />
+              <div className="overflow-hidden rounded-full">
+                <Image
+                  src={client.src}
+                  alt="Ornament Background"
+                  width={10000}
+                  height={10000}
+                  className={`${client.width} ${client.height} object-cover md:mt-0 mt-[3vw] group-hover:scale-110 transition-transform duration-300`}
+                />
+              </div>
               <p className="font-bold text-[4.186vw] md:text-[0.938vw] mt-[3vw] md:mt-[0.5vw]">
                 {client.title}
               </p>
@@ -80,14 +82,14 @@ export default function teams3() {
                   alt="Ornament Background"
                   width={10000}
                   height={10000}
-                  className="md:w-[1.042vw] md:h-[1.042vw] w-[4.651vw] h-[4.651vw] mr-[2vw] md:mr-[0.7vw]"
+                  className="md:w-[1.042vw] md:h-[1.042vw] w-[4.651vw] h-[4.651vw] mr-[2vw] md:mr-[0.7vw] hover:scale-110 transition-transform duration-300 cursor-pointer"
                 />
                 <Image
                   src="/image/teams/linkedin.png"
                   alt="Ornament Background"
                   width={10000}
                   height={10000}
-                  className="md:w-[1.042vw] md:h-[1.042vw] w-[4.651vw] h-[4.651vw]"
+                  className="md:w-[1.042vw] md:h-[1.042vw] w-[4.651vw] h-[4.651vw] hover:scale-110 transition-transform duration-300 cursor-pointer"
                 />
               </div>
             </div>
@@ -96,16 +98,18 @@ export default function teams3() {
         <div className="flex flex-col md:flex-row items-center justify-between">
           {sources1.map((client, index) => (
             <div
-              className="md:w-[17.578vw] md:h-[15.208vw] w-full h-[67.907vw] flex flex-col items-center bg-[#F9FAFB] p-[2vw] md:p-[1.25vw] md:mt-0 mt-[5vw] relative"
+              className="md:w-[17.578vw] md:h-[15.208vw] w-full h-[67.907vw] flex flex-col items-center bg-[#F9FAFB] p-[2vw] md:p-[1.25vw] md:mt-0 mt-[5vw] relative hover:shadow-xl transition-shadow duration-300 group"
               key={index}
             >
-              <Image
-                src={client.src}
-                alt="Ornament Background"
-                width={10000}
-                height={10000}
-                className={`${client.width} ${client.height} object-cover md:mt-0 mt-[3vw]`}
-              />
+              <div className="overflow-hidden rounded-full">
+                <Image
+                  src={client.src}
+                  alt="Ornament Background"
+                  width={10000}
+                  height={10000}
+                  className={`${client.width} ${client.height} object-cover md:mt-0 mt-[3vw] group-hover:scale-110 transition-transform duration-300`}
+                />
+              </div>
               <p className="font-bold text-[4.186vw] md:text-[0.938vw] mt-[3vw] md:mt-[0.5vw]">
                 {client.title}
               </p>
@@ -121,14 +125,14 @@ export default function teams3() {
                   alt="Ornament Background"
                   width={10000}
                   height={10000}
-                  className="md:w-[1.042vw] md:h-[1.042vw] w-[4.651vw] h-[4.651vw] mr-[2vw] md:mr-[0.7vw]"
+                  className="md:w-[1.042vw] md:h-[1.042vw] w-[4.651vw] h-[4.651vw] mr-[2vw] md:mr-[0.7vw] hover:scale-110 transition-transform duration-300 cursor-pointer"
                 />
                 <Image
                   src="/image/teams/linkedin.png"
                   alt="Ornament Background"
                   width={10000}
                   height={10000}
-                  className="md:w-[1.042vw] md:h-[1.042vw] w-[4.651vw] h-[4.651vw]"
+                  className="md:w-[1.042vw] md:h-[1.042vw] w-[4.651vw] h-[4.651vw] hover:scale-110 transition-transform duration-300 cursor-pointer"
                 />
               </div>
             </div>

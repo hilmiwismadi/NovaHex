@@ -75,7 +75,7 @@ function CardTitle({ feature }: CardTitleProps) {
 
 function CardPricing({ type, desc, fee, pages, usersPerPage, features }: CardContent) {
     return (
-        <div className="text-center md:w-[18.75vw] w-[30.698vw]">
+        <div className="text-center md:w-[18.75vw] w-[30.698vw] group hover:shadow-xl transition-shadow duration-300">
             {/* content head */}
             <div className="md:h-[14.21875vw] h-[57.674vw] p-[1vw] flex flex-col justify-center items-center">
                 <p className="font-bold md:text-[1.25vw] text-[3.488vw]">{type}</p>
@@ -90,7 +90,7 @@ function CardPricing({ type, desc, fee, pages, usersPerPage, features }: CardCon
                     </p>
                 )}
                 <p className="md:text-[0.729vw] text-[2.57vw]">{desc}</p>
-                <button className="bg-[rgba(66,115,206,1)] text-white py-[0.5vw] px-[1vw] md:w-[15.83vw] md:h-fit w-[22.326vw] h-[13.333vw] rounded-md md:mt-[1vw] mt-[3vw] md:text-[0.833vw] text-[2.5vw]">
+                <button className="bg-[rgba(66,115,206,1)] text-white py-[0.5vw] px-[1vw] md:w-[15.83vw] md:h-fit w-[22.326vw] h-[13.333vw] rounded-md md:mt-[1vw] mt-[3vw] md:text-[0.833vw] text-[2.5vw] hover:scale-105 hover:shadow-lg transition-all duration-300">
                     Choose This Plan
                 </button>
             </div>
@@ -119,9 +119,9 @@ function CardPricing({ type, desc, fee, pages, usersPerPage, features }: CardCon
                         key={featureKey}
                     >
                         {(features[featureKey as keyof typeof features]) ? (
-                            <CiCircleCheck className="text-green-600 md:text-[2vw] text-[6vw]" />
+                            <CiCircleCheck className="text-green-600 md:text-[2vw] text-[6vw] hover:scale-110 transition-transform duration-300" />
                         ) : (
-                            <CiCircleRemove className="text-red-600 md:text-[2vw] text-[6vw]" />
+                            <CiCircleRemove className="text-red-600 md:text-[2vw] text-[6vw] hover:scale-110 transition-transform duration-300" />
                         )}
                     </div>
                 ))}

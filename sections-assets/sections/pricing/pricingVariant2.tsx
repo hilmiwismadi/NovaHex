@@ -27,7 +27,7 @@ function Pricing2Card({ feature, isMonthly }: CardProps) {
     typeof price === "number" ? formatNumberWithDots(price) : price;
 
   return (
-    <div className="md:w-[16vw] w-[68.14vw] md:h-full">
+    <div className="md:w-[16vw] w-[68.14vw] md:h-full group hover:shadow-xl transition-shadow duration-300">
       <div
         className={`text-white md:text-[0.729vw] text-[3vw] md:h-[2vw] h-[5vw] ${
           feature.isPopular ? "bg-blue-600" : ""
@@ -36,7 +36,7 @@ function Pricing2Card({ feature, isMonthly }: CardProps) {
         {feature.isPopular && (
           <div className="flex items-center rounded-t-lg justify-center gap-x-[0.5vw]">
             <p>Most Popular</p>
-            <IoSparklesSharp className="md:text-[1vw] text-[3vw]" />
+            <IoSparklesSharp className="md:text-[1vw] text-[3vw] hover:scale-110 transition-transform duration-300" />
           </div>
         )}
       </div>
@@ -60,7 +60,7 @@ function Pricing2Card({ feature, isMonthly }: CardProps) {
             </p>
           )}
         </div>
-        <button className="bg-blue-600 text-white font-semibold py-[0.417vw] px-[0.833vw] rounded-lg w-full mb-4 md:text-[0.833vw] text-[3.786vw]">
+        <button className="bg-blue-600 text-white font-semibold py-[0.417vw] px-[0.833vw] rounded-lg w-full mb-4 md:text-[0.833vw] text-[3.786vw] hover:scale-105 hover:shadow-lg transition-all duration-300">
           Get started
         </button>
         <p className="md:text-[0.833vw] text-[3.786vw] font-bold md:mb-[1vw] mb-[3vw]">{`All free ${feature.title}, plus:`}</p>

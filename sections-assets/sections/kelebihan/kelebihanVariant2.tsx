@@ -30,7 +30,7 @@ export default function kelebihan2() {
       <div className="md:w-[57.552vw] md:h-[7.083vw] w-[78.837vw] h-[117.733vw] flex md:flex-row flex-col items-center justify-between">
         {sources.map((client, index) => (
           <div
-            className="w-full md:h-[7.083vw] h-[30.721vw] flex flex-row mr-0 md:mr-[1vw]"
+            className="w-full md:h-[7.083vw] h-[30.721vw] flex flex-row mr-0 md:mr-[1vw] group"
             key={index}
           >
             <Image
@@ -38,10 +38,10 @@ export default function kelebihan2() {
               alt="Ornament Background"
               width={10000}
               height={10000}
-              className={`${client.width} ${client.height} mr-[5vw] md:mr-[1vw] object-cover`}
+              className={`${client.width} ${client.height} mr-[5vw] md:mr-[1vw] object-cover hover:scale-110 transition-transform duration-300`}
             />
             <div className="">
-              <h1 className="text-[4.744vw] md:text-[1.094vw] font-bold">
+              <h1 className="text-[4.744vw] md:text-[1.094vw] font-bold group-hover:text-[#1AB0C8] transition-colors duration-300">
                 {client.title}
               </h1>
               <p className="mt-[1.4vw] text-[3.84vw] md:text-[0.885vw] text-justify">

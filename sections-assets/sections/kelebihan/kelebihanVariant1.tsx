@@ -66,7 +66,7 @@ export default function kelebihan1() {
           <div className="flex items-center justify-center flex-col md:flex-row">
             {sources1.map((client, index) => (
               <div
-                className="md:w-[29.167vw] w-full flex flex-col items-center justify-center md:mt-0 mt-[2vw]"
+                className="md:w-[29.167vw] w-full flex flex-col items-center justify-center md:mt-0 mt-[2vw] group"
                 key={index}
               >
                 <Image
@@ -74,9 +74,9 @@ export default function kelebihan1() {
                   alt="Ornament Background"
                   width={10000}
                   height={10000}
-                  className={`${client.width} ${client.height} object-cover`}
+                  className={`${client.width} ${client.height} object-cover hover:scale-110 transition-transform duration-300`}
                 />
-                <h1 className="text-black text-[3.884vw] md:text-[1.25vw] font-bold mt-[0.5vw]">
+                <h1 className="text-black text-[3.884vw] md:text-[1.25vw] font-bold mt-[0.5vw] group-hover:text-[#4273CE] transition-colors duration-300">
                   {client.title}
                 </h1>
                 <p className="text-[2.912vw] md:text-[0.938vw] text-[#5E5E5E] text-justify px-[1.3vw] mt-[1vw]">
@@ -88,7 +88,7 @@ export default function kelebihan1() {
           <div className="flex items-center justify-between md:justify-center flex-col md:flex-row mt-[1vw]">
             {sources2.map((client, index) => (
               <div
-                className="md:w-[29.167vw] w-full flex flex-col items-center justify-center md:mt-0 mt-[2vw]"
+                className="md:w-[29.167vw] w-full flex flex-col items-center justify-center md:mt-0 mt-[2vw] group"
                 key={index}
               >
                 <Image
@@ -96,9 +96,9 @@ export default function kelebihan1() {
                   alt="Ornament Background"
                   width={10000}
                   height={10000}
-                  className={`${client.width} ${client.height} object-cover`}
+                  className={`${client.width} ${client.height} object-cover hover:scale-110 transition-transform duration-300`}
                 />
-                <h1 className="text-black text-[3.884vw] md:text-[1.25vw] font-bold mt-[0.5vw]">
+                <h1 className="text-black text-[3.884vw] md:text-[1.25vw] font-bold mt-[0.5vw] group-hover:text-[#4273CE] transition-colors duration-300">
                   {client.title}
                 </h1>
                 <p className="text-[2.912vw] md:text-[0.938vw] text-[#5E5E5E] text-justify px-[1.3vw] mt-[1vw]">

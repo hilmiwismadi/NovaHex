@@ -63,12 +63,12 @@ export default function portofolio1() {
         <div className="md:absolute md:right-0 md:mt-0 mt-[2vw]">
           <a
             href=""
-            className="md:w-[10.365vw] md:h-[2.5vw] w-[42.802vw] h-[10.537vw] text-[#407BFF] flex items-center justify-center"
+            className="md:w-[10.365vw] md:h-[2.5vw] w-[42.802vw] h-[10.537vw] text-[#407BFF] flex items-center justify-center hover:text-[#1AB0C8] transition-colors duration-300 group"
           >
-            <h1 className=" text-[#407BFF] text-[3.458vw] md:text-[0.833vw] font-bold mr-[3vw] md:mr-[0.5vw]">
+            <h1 className=" text-[#407BFF] text-[3.458vw] md:text-[0.833vw] font-bold mr-[3vw] md:mr-[0.5vw] group-hover:text-[#1AB0C8] transition-colors duration-300">
               View All Portofolio
             </h1>
-            <FaArrowRight />
+            <FaArrowRight className="group-hover:translate-x-1 transition-transform duration-300" />
           </a>
         </div>
       </div>

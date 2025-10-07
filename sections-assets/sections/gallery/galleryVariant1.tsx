@@ -20,26 +20,26 @@ export default function Gallery1() {
       <div className="p-[1vw] hidden md:flex">
         <div className="grid grid-cols-10 gap-[1vw] w-full">
           {/* part 1 */}
-          <div className="columns-2 [&>img:not(:first-child)]:mt-[1vw] gap-[1vw] col-span-4">
-            <Image src="/image/gallery/gallery1/gallery1.png" alt="gallery" width={10000} height={10000} />
-            <Image src="/image/gallery/gallery1/gallery2.png" alt="gallery" width={10000} height={10000} />
-            <Image src="/image/gallery/gallery1/gallery6.png" alt="gallery" width={10000} height={10000} />
-            <Image src="/image/gallery/gallery1/gallery7.png" alt="gallery" width={10000} height={10000} />
+          <div className="columns-2 [&>img:not(:first-child)]:mt-[1vw] gap-[1vw] col-span-4 [&>div]:overflow-hidden [&>div]:rounded-lg">
+            <div className="overflow-hidden rounded-lg"><Image src="/image/gallery/gallery1/gallery1.png" alt="gallery" width={10000} height={10000} className="hover:scale-105 transition-transform duration-300" /></div>
+            <div className="overflow-hidden rounded-lg"><Image src="/image/gallery/gallery1/gallery2.png" alt="gallery" width={10000} height={10000} className="hover:scale-105 transition-transform duration-300" /></div>
+            <div className="overflow-hidden rounded-lg"><Image src="/image/gallery/gallery1/gallery6.png" alt="gallery" width={10000} height={10000} className="hover:scale-105 transition-transform duration-300" /></div>
+            <div className="overflow-hidden rounded-lg"><Image src="/image/gallery/gallery1/gallery7.png" alt="gallery" width={10000} height={10000} className="hover:scale-105 transition-transform duration-300" /></div>
           </div>
           {/* part 1 */}
 
           {/* part 2 */}
-          <div className="flex justify-center items-center col-span-2">
-            <Image src="/image/gallery/gallery1/gallery3.png" alt="gallery" width={10000} height={10000} className="w-[17.538vw]" />
+          <div className="flex justify-center items-center col-span-2 overflow-hidden rounded-lg">
+            <Image src="/image/gallery/gallery1/gallery3.png" alt="gallery" width={10000} height={10000} className="w-[17.538vw] hover:scale-105 transition-transform duration-300" />
           </div>
           {/* part 2 */}
 
           {/* part 3 */}
           <div className="columns-2 [&>img:not(:first-child)]:mt-[1vw] gap-[1vw] col-span-4">
-            <Image src="/image/gallery/gallery1/gallery4.png" alt="gallery" width={10000} height={10000} />
-            <Image src="/image/gallery/gallery1/gallery5.png" alt="gallery" width={10000} height={10000} />
-            <Image src="/image/gallery/gallery1/gallery8.png" alt="gallery" width={10000} height={10000} />
-            <Image src="/image/gallery/gallery1/gallery9.png" alt="gallery" width={10000} height={10000} />
+            <div className="overflow-hidden rounded-lg"><Image src="/image/gallery/gallery1/gallery4.png" alt="gallery" width={10000} height={10000} className="hover:scale-105 transition-transform duration-300" /></div>
+            <div className="overflow-hidden rounded-lg"><Image src="/image/gallery/gallery1/gallery5.png" alt="gallery" width={10000} height={10000} className="hover:scale-105 transition-transform duration-300" /></div>
+            <div className="overflow-hidden rounded-lg"><Image src="/image/gallery/gallery1/gallery8.png" alt="gallery" width={10000} height={10000} className="hover:scale-105 transition-transform duration-300" /></div>
+            <div className="overflow-hidden rounded-lg"><Image src="/image/gallery/gallery1/gallery9.png" alt="gallery" width={10000} height={10000} className="hover:scale-105 transition-transform duration-300" /></div>
           </div>
           {/* part 3 */}
         </div>

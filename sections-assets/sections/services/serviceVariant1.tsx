@@ -33,45 +33,47 @@ const sources = [
 
 export default function service1() {
   return (
-    <section className="w-full md:min-h-[46.667vw] md:aspect-ratio[1920/1080] aspect-ratio[430/1551] p-8 flex flex-col justify-center items-center bg-white text-gray-800 relative">
-      <div className="md:w-[52.135vw] md:h-[6.927vw] w-[80.93vw] h-[33.814vw] flex flex-col items-center justify-between">
-        <h1 className="font-bold text-[4.467vw] md:text-[1.25vw] text-[#4273CE]">
+    <section className="w-full md:min-h-[46.667vw] md:aspect-ratio[1920/1080] aspect-ratio[430/1551] p-4 sm:p-6 lg:p-8 flex flex-col justify-center items-center bg-white text-gray-800 relative">
+      <div className="w-full sm:w-[90%] lg:w-[52.135vw] lg:h-[6.927vw] flex flex-col items-center justify-between gap-4 sm:gap-6">
+        <h1 className="font-bold text-base sm:text-lg lg:text-[1.25vw] text-[#4273CE]">
           Our Services
         </h1>
-        <h1 className="font-bold md:text-[1.875vw] text-[#161C2D] text-center md:block hidden">
+        <h1 className="font-bold text-xl sm:text-2xl lg:text-[1.875vw] text-[#161C2D] text-center md:block hidden">
           We provide great services for <br />
           our customers based on needs
         </h1>
-        <h1 className="font-bold text-[6vw] text-[#161C2D] text-center md:hidden leading-[8vw]">
+        <h1 className="font-bold text-xl sm:text-2xl text-[#161C2D] text-center md:hidden leading-relaxed">
           We provide great services for our customers based on needs
         </h1>
       </div>
-      <div className="md:w-[60.938vw] md:h-[25.156vw] w-[63.381vw] h-[284.128vw] flex flex-col md:flex-row items-center justify-between mt-[3vw]">
+      <div className="w-full sm:w-[90%] lg:w-[60.938vw] lg:h-[25.156vw] flex flex-col md:flex-row items-center justify-between mt-6 sm:mt-8 lg:mt-[3vw] gap-6 sm:gap-8 lg:gap-0">
         {sources.map((client, index) => (
           <div
-            className="md:w-[18.229vw] md:h-[25.156vw] w-[63.381vw] h-[87.465vw] flex flex-col items-center justify-center rounded-[2vw] md:rounded-[0.521vw] relative"
+            className="w-full sm:w-[80%] lg:w-[18.229vw] lg:h-[25.156vw] flex flex-col items-center justify-center rounded-lg lg:rounded-[0.521vw] relative hover:scale-105 hover:shadow-2xl transition-all duration-300"
             style={{ backgroundColor: client.background }}
             key={index}
           >
-            <Image
-              src={client.src}
-              alt="Ornament Background"
-              width={10000}
-              height={10000}
-              className={`${client.width} ${client.height} absolute top-[3.5vw]`}
-            />
-            <p className="text-white font-bold text-[4.347vw] md:text-[0.938vw] mt-[10vw] md:mt-0">
+            <div className="absolute top-8 sm:top-10 lg:top-[3.5vw] overflow-hidden">
+              <Image
+                src={client.src}
+                alt="Ornament Background"
+                width={10000}
+                height={10000}
+                className="w-16 sm:w-20 lg:w-[4.167vw] lg:h-[4.167vw] hover:scale-110 transition-transform duration-300"
+              />
+            </div>
+            <p className="text-white font-bold text-base sm:text-lg lg:text-[0.938vw] mt-20 sm:mt-24 lg:mt-0">
               {client.title}
             </p>
-            <p className="md:w-[15.417vw] md:h-[4.531vw] w-[53.602vw] h-[15.814vw] text-white text-[3.079vw] md:text-[0.833vw] text-center mt-[5vw] md:mt-[1.5vw] md:leading-[1.5vw]">
+            <p className="w-full sm:w-[80%] lg:w-[15.417vw] lg:h-[4.531vw] text-white text-sm sm:text-base lg:text-[0.833vw] text-center mt-4 sm:mt-6 lg:mt-[1.5vw] lg:leading-[1.5vw] px-4">
               {client.text1}
             </p>
-            <div className="absolute bottom-[5vw] md:bottom-[2vw]">
-              <a href="" className="flex flex-row items-center">
-                <h1 className="text-white text-[3.079vw] md:text-[0.885vw] font-bold mr-[1vw]">
+            <div className="absolute bottom-6 sm:bottom-8 lg:bottom-[2vw]">
+              <a href="" className="flex flex-row items-center hover:gap-3 gap-2 transition-all duration-300 group">
+                <h1 className="text-white text-sm sm:text-base lg:text-[0.885vw] font-bold">
                   Learn More
                 </h1>
-                <div className="text-[2.172vw] md:text-[0.625vw] text-white">
+                <div className="text-xs sm:text-sm lg:text-[0.625vw] text-white group-hover:translate-x-1 transition-transform duration-300">
                   <FaArrowRight />
                 </div>
               </a>
